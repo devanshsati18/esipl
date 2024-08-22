@@ -1,3 +1,4 @@
+import 'animate.css'
 import CustomNavbar from "./Common/CustomNavbar";
 import Home from "./Pages/Home/Home"
 
