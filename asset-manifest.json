@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/esipl/static/css/main.93a8bedc.css",
-    "main.js": "/esipl/static/js/main.59991249.js",
+    "main.css": "/esipl/static/css/main.dbff977b.css",
+    "main.js": "/esipl/static/js/main.c3167530.js",
+    "static/js/835.99a0c418.chunk.js": "/esipl/static/js/835.99a0c418.chunk.js",
+    "static/js/411.5c2c9a83.chunk.js": "/esipl/static/js/411.5c2c9a83.chunk.js",
     "static/js/453.749773d2.chunk.js": "/esipl/static/js/453.749773d2.chunk.js",
+    "static/css/962.519c19b0.chunk.css": "/esipl/static/css/962.519c19b0.chunk.css",
+    "static/js/962.f02bb685.chunk.js": "/esipl/static/js/962.f02bb685.chunk.js",
     "static/media/bg4.jpg": "/esipl/static/media/bg4.3a04f1413b9c7291ec71.jpg",
     "static/media/bg5.jpg": "/esipl/static/media/bg5.35d61a683f53d6083fbc.jpg",
     "static/media/bg2.jpg": "/esipl/static/media/bg2.ebbc19157c9f7bceab82.jpg",
@@ -14,12 +18,16 @@
     "static/media/slick.ttf": "/esipl/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/esipl/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/esipl/index.html",
-    "main.93a8bedc.css.map": "/esipl/static/css/main.93a8bedc.css.map",
-    "main.59991249.js.map": "/esipl/static/js/main.59991249.js.map",
-    "453.749773d2.chunk.js.map": "/esipl/static/js/453.749773d2.chunk.js.map"
+    "main.dbff977b.css.map": "/esipl/static/css/main.dbff977b.css.map",
+    "main.c3167530.js.map": "/esipl/static/js/main.c3167530.js.map",
+    "835.99a0c418.chunk.js.map": "/esipl/static/js/835.99a0c418.chunk.js.map",
+    "411.5c2c9a83.chunk.js.map": "/esipl/static/js/411.5c2c9a83.chunk.js.map",
+    "453.749773d2.chunk.js.map": "/esipl/static/js/453.749773d2.chunk.js.map",
+    "962.519c19b0.chunk.css.map": "/esipl/static/css/962.519c19b0.chunk.css.map",
+    "962.f02bb685.chunk.js.map": "/esipl/static/js/962.f02bb685.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93a8bedc.css",
-    "static/js/main.59991249.js"
+    "static/css/main.dbff977b.css",
+    "static/js/main.c3167530.js"
   ]
 }
