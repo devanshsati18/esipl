@@ -7,21 +7,21 @@ import 'animate.css'; // Import Animate.css
 // Custom arrow components using Font Awesome
 const CustomPrevArrow = (props) => (
   <button 
-    className="slick-arrow slick-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg focus:outline-none"
+    className="slick-arrow slick-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 p-3 rounded-full shadow-lg focus:outline-none z-10 hover:bg-opacity-75"
     onClick={props.onClick}
     aria-label="Previous Slide"
   >
-    <i className="fas fa-chevron-left text-black"></i>
+    <i className="fas fa-chevron-left text-white"></i>
   </button>
 );
 
 const CustomNextArrow = (props) => (
   <button 
-    className="slick-arrow slick-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg focus:outline-none"
+    className="slick-arrow slick-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 p-3 rounded-full shadow-lg focus:outline-none z-10 hover:bg-opacity-75"
     onClick={props.onClick}
     aria-label="Next Slide"
   >
-    <i className="fas fa-chevron-right text-black"></i>
+    <i className="fas fa-chevron-right text-white"></i>
   </button>
 );
 
@@ -40,57 +40,57 @@ const sliderSettings = {
 
 function CustomSlider() {
   return (
-    <div className="relative w-full h-[93vh] overflow-hidden">
+    <div className="relative w-full h-full overflow-hidden">
       <Slider {...sliderSettings} className="h-full">
         {/* Slide 1 */}
-        <div className="relative h-full">
+        <div className="relative h-full bg-gray-800">
           <img 
-            src={require('../../Assets/Slider/bg2.jpg')} 
+            src={require('../../Assets/Slider/th.jpeg')} 
             alt="Slide 1" 
-            className="w-full h-full object-cover" 
+            className="w-full h-full object-contain" 
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 bg-black bg-opacity-30">
-            <h2 className="text-4xl lg:text-6xl font-bold animate__animated animate__fadeIn">Reinforced Soil Walls</h2>
-            <p className="text-xl lg:text-2xl mt-2 animate__animated animate__fadeIn animate__delay-1s">Panel Fascia</p>
+            <h2 className="text-4xl lg:text-6xl font-bold animate__animated animate__fadeInLeft">Reinforced Soil Walls</h2>
+            <p className="text-xl lg:text-2xl mt-2 animate__animated animate__fadeInRight animate__delay-1s">Panel Fascia</p>
           </div>
         </div>
 
         {/* Slide 2 */}
-        <div className="relative h-full">
+        <div className="relative h-full bg-gray-800">
           <img 
             src={require('../../Assets/Slider/bg3.jpg')} 
             alt="Slide 2" 
-            className="w-full h-full object-cover" 
+            className="w-full h-full object-contain" 
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 bg-black bg-opacity-30">
-            <h2 className="text-4xl lg:text-6xl font-bold animate__animated animate__fadeIn">Reinforced Soil Walls</h2>
-            <p className="text-xl lg:text-2xl mt-2 animate__animated animate__fadeIn animate__delay-1s">Panel Fascia</p>
+            <h2 className="text-4xl lg:text-6xl font-bold animate__animated animate__fadeInLeft">Reinforced Soil Walls</h2>
+            <p className="text-xl lg:text-2xl mt-2 animate__animated animate__fadeInRight animate__delay-1s">Panel Fascia</p>
           </div>
         </div>
 
         {/* Slide 3 */}
-        <div className="relative h-full">
+        <div className="relative h-full bg-gray-800">
           <img 
             src={require('../../Assets/Slider/bg4.jpg')} 
             alt="Slide 3" 
-            className="w-full h-full object-cover" 
+            className="w-full h-full object-contain" 
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 bg-black bg-opacity-30">
-            <h2 className="text-4xl lg:text-6xl font-bold animate__animated animate__fadeIn">Reinforced Soil Walls</h2>
-            <p className="text-xl lg:text-2xl mt-2 animate__animated animate__fadeIn animate__delay-1s">Gabion and Block Fascia</p>
+            <h2 className="text-4xl lg:text-6xl font-bold animate__animated animate__fadeInLeft">Reinforced Soil Walls</h2>
+            <p className="text-xl lg:text-2xl mt-2 animate__animated animate__fadeInRight animate__delay-1s">Gabion and Block Fascia</p>
           </div>
         </div>
 
         {/* Slide 4 */}
-        <div className="relative h-full">
+        <div className="relative h-full bg-gray-800">
           <img 
             src={require('../../Assets/Slider/bg5.jpg')} 
             alt="Slide 4" 
-            className="w-full h-full object-cover" 
+            className="w-full h-full object-contain" 
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 bg-black bg-opacity-30">
-            <h2 className="text-4xl lg:text-6xl font-bold animate__animated animate__fadeIn">Slide 4 Heading</h2>
-            <p className="text-xl lg:text-2xl mt-2 animate__animated animate__fadeIn animate__delay-1s">Slide 4 Content</p>
+            <h2 className="text-4xl lg:text-6xl font-bold animate__animated animate__fadeInLeft">Slide 4 Heading</h2>
+            <p className="text-xl lg:text-2xl mt-2 animate__animated animate__fadeInRight animate__delay-1s">Slide 4 Content</p>
           </div>
         </div>
       </Slider>

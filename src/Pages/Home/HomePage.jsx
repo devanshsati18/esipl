@@ -2,10 +2,10 @@ import AboutUs from "./AboutUs";
 import CustomSlider from "./Slider";
 import Application from "./Application";
 
-const HomePage =()=>{
-    return(
+const HomePage = () => {
+    return (
         <div>
-            <div className=" w-full h-[85vh]">
+            <div className="w-full h-[calc(100vh-7vh)]"> {/* 10vh is reserved for the navbar */}
                 <CustomSlider />
             </div>
             <div>
@@ -15,6 +15,6 @@ const HomePage =()=>{
                 <Application />
             </div>
         </div>
-    )
+    );
 }
 export default HomePage;
