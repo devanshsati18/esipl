@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/esiplprod/static/css/main.2401159f.css",
+    "main.js": "/esiplprod/static/js/main.03790345.js",
+    "static/js/453.749773d2.chunk.js": "/esiplprod/static/js/453.749773d2.chunk.js",
+    "static/media/bg4.jpg": "/esiplprod/static/media/bg4.3a04f1413b9c7291ec71.jpg",
+    "static/media/bg5.jpg": "/esiplprod/static/media/bg5.35d61a683f53d6083fbc.jpg",
+    "static/media/bg2.jpg": "/esiplprod/static/media/bg2.ebbc19157c9f7bceab82.jpg",
+    "static/media/bg3.jpg": "/esiplprod/static/media/bg3.b73f48d865265d4649ec.jpg",
+    "static/media/esipl_logo_new_1.png": "/esiplprod/static/media/esipl_logo_new_1.c3420a29a80fcee8dba4.png",
+    "static/media/esipl_logo_new_2.png": "/esiplprod/static/media/esipl_logo_new_2.848f8f05c7e65d284454.png",
+    "static/media/slick.svg": "/esiplprod/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/esiplprod/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/esiplprod/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/esiplprod/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/esiplprod/index.html",
+    "main.2401159f.css.map": "/esiplprod/static/css/main.2401159f.css.map",
+    "main.03790345.js.map": "/esiplprod/static/js/main.03790345.js.map",
+    "453.749773d2.chunk.js.map": "/esiplprod/static/js/453.749773d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2401159f.css",
+    "static/js/main.03790345.js"
+  ]
+}
