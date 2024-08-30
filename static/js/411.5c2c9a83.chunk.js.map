@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/411.5c2c9a83.chunk.js","mappings":"uIAAA,MAQA,EARcA,KAENC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,W","sources":["Pages/Gallery/Gallery.jsx"],"sourcesContent":["const Gallery=()=>{\r\n    return(\r\n        <div>\r\n            Gallery\r\n        </div>\r\n    )\r\n}\r\n\r\nexport default Gallery;"],"names":["Gallery","_jsx","children"],"sourceRoot":""}
