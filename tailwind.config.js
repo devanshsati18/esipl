@@ -1,11 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'md': '768px',
+        'lg': '1024px',
+        // Add custom breakpoints here
+      },
+      colors: {
+        'custom-blue': '#0000FF',
+        'custom-orange': '#FFA500',
+      },
+    },
   },
   plugins: [],
 }
