@@ -1,0 +1,42 @@
+/* Slide-in animations for left and right */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation only when element is visible */
+.timeline-item.animate.slide-in-right {
+  animation: slideInRight 1s ease-in-out forwards;
+}
+
+.timeline-item.animate.slide-in-left {
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.timeline-item {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Optional initial transform */
+}
+
+/* To avoid overlapping animations */
+.timeline-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

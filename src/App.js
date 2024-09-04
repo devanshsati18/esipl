@@ -7,7 +7,7 @@ import Footer from './Common/Footer';
 const HomePage = lazy(() => import('./Pages/Home/HomePage'));
 const Gallery = lazy(() => import('./Pages/Gallery/Gallery'));
 
-// Layout Component
+// Layout Component 
 function Layout({ children }) {
   return (
     <div>
