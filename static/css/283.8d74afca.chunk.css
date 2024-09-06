@@ -1,0 +1,2 @@
+@keyframes slideInRight{0%{opacity:0;transform:translateX(100%)}to{opacity:1;transform:translateX(0)}}@keyframes slideInLeft{0%{opacity:0;transform:translateX(-100%)}to{opacity:1;transform:translateX(0)}}.timeline-item.animate.slide-in-right{animation:slideInRight 1s ease-in-out forwards}.timeline-item.animate.slide-in-left{animation:slideInLeft 1s ease-in-out forwards}.timeline-item{opacity:0;transform:translateY(20px)}.timeline-item.animate{opacity:1;transform:translateY(0)}
+/*# sourceMappingURL=283.8d74afca.chunk.css.map*/
