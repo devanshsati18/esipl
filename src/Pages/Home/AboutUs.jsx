@@ -1,5 +1,3 @@
-// AboutUs.jsx
-
 import React, { useState } from 'react';
 import 'animate.css'; // Import Animate.css
 
@@ -51,55 +49,41 @@ const tabContent = {
 
 function AboutUs() {
   const [activeTab, setActiveTab] = useState('Reinforced Soil Walls');
+  const tabs = Object.keys(tabContent);
 
   return (
-    <div className="w-full h-screen flex flex-col lg:flex-row">
-      {/* Left Section */}
-      <div className="lg:w-2/5 bg-orange-600 text-white p-8 flex flex-col"> {/* Expanded width */}
-        {/* About Us Section */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-4">About Us</h1>
-          <p className="text-lg">
-            Earthcon Systems (India) Pvt. Ltd., an ISO: 9001:2015 organization is committed to providing comprehensive services like design, supply, and construction.
-            Address: D-40, Pocket D, Okhla Phase I, Okhla Industrial Area New Delhi, Delhi 110020
-            Email: info@esipl.net
-            Phone No.: 9899222244, 9899222245
-          </p>
+    <div className="text-center p-9">
+      {/* Heading */}
+      <div className="mb-8">
+        <div className="text-3xl lg:text-5xl font-semibold mb-4">
+          <span className="text-orange-500">Who We</span>
+          <span className="text-black"> Are</span>
         </div>
-
-        {/* Buttons for Tabs */}
-        <div className="flex flex-wrap lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4">
-          {Object.keys(tabContent).map((tab) => (
-            <button
-              key={tab}
-              className={`py-2 px-4 mb-2 rounded-lg border-2 transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                activeTab === tab
-                  ? 'bg-white text-black border-black transform scale-105'
-                  : 'bg-darkOrange text-white border-darkOrange'
-              }`}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
+        <p className="text-base lg:text-lg leading-relaxed">
+          Earthcon Systems (India) Pvt. Ltd., an ISO: 9001:2015 organization, is committed to providing comprehensive services like design, supply, and construction in the fields of:
+        </p>
       </div>
 
-      {/* Right Section */}
-      <div className="lg:w-3/5 p-8 flex flex-col">
-        {/* Tab Content */}
-        <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
-          <div className="flex-1 animate__animated animate__fadeIn">
-            <img
-              src={tabContent[activeTab].imgSrc}
-              alt={activeTab}
-              className="w-full h-auto object-cover rounded-lg"
-            />
+      {/* Main content section */}
+      <div className="flex flex-col lg:flex-row w-full">
+        {/* Left Section - Tabs and Content */}
+        <div className="lg:w-1/3 w-full bg-orange-600 text-white p-4 lg:p-8 flex flex-col">
+          
+          <div className="flex-1">
+            <h2 className="text-xl lg:text-2xl font-bold mb-4">{activeTab}</h2>
+            <p className="text-base lg:text-lg leading-relaxed">
+              {tabContent[activeTab].content}
+            </p>
           </div>
-          <div className="flex-1 animate__animated animate__fadeIn">
-            <h2 className="text-2xl font-bold mb-4">{activeTab}</h2>
-            <p>{tabContent[activeTab].content}</p>
-          </div>
+        </div>
+
+        {/* Right Section - Image */}
+        <div className="lg:w-2/3 w-full">
+          <img
+            src={tabContent[activeTab].imgSrc}
+            alt={activeTab}
+            className="w-full h-auto object-cover rounded-lg"
+          />
         </div>
       </div>
     </div>

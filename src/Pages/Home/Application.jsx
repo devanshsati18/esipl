@@ -1,252 +1,111 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css'; 
-import 'slick-carousel/slick/slick-theme.css'; 
-import 'animate.css'; // Import Animate.css for animations
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline'; // Heroicons
+import React, { useState } from 'react';
+import { FaInfoCircle } from 'react-icons/fa';
+import 'animate.css'; // Import Animate.css
 
-// Card component
-const Card = ({ heading, imageSrc, content, link }) => {
-  return (
-    <div
-      style={{
-        backgroundColor: 'white',
-        border: '1px solid transparent',
-        boxShadow: '0 4px 6px rgba(0,0,0,0.2)', // Shadow for the card
-        transition: 'all 0.3s',
-        borderRadius: '8px',
-        padding: '16px',
-        transform: 'scale(1)',
-        ':hover': {
-          borderColor: '#FFA500', // Orange color on hover
-          boxShadow: '0 6px 12px rgba(0,0,0,0.3)', // Shadow on hover
-          transform: 'scale(1.05)',
-        },
-      }}
-    >
-      <h3
-        style={{
-          color: '#FFA500',
-          fontSize: '28px', // Increased font size
-          fontWeight: 'bold',
-          marginBottom: '8px',
-          textDecoration: 'underline',
-        }}
-      >
-        {heading}
-      </h3>
-      <img
-        src={imageSrc}
-        alt={heading}
-        style={{
-          width: '100%',
-          height: '250px', // Increased height
-          objectFit: 'cover',
-          marginBottom: '16px',
-          borderRadius: '8px',
-        }}
-      />
-      <ul style={{ marginBottom: '16px', color: 'black', listStyleType: 'disc', paddingLeft: '20px' }}>
-        {content.map((point, index) => (
-          <li key={index}>{point}</li>
-        ))}
-      </ul>
-      <a
-        href={link}
-        style={{
-          color: '#FFA500',
-          textDecoration: 'underline',
-        }}
-      >
-        Learn More
-      </a>
-    </div>
-  );
+// Import images
+import SoilWallsImage from './OIP.jpeg';
+import SlopesImage from './OIP.jpeg';
+import ImprovementImage from './OIP.jpeg';
+import NailingImage from './OIP.jpeg';
+import RockfallImage from './OIP.jpeg';
+import PavementImage from './OIP.jpeg';
+import ErosionImage from './OIP.jpeg';
+import LinerImage from './OIP.jpeg';
+
+// Dummy content for tabs
+const tabContent = {
+  'MSE/ RE/ RS Wall Construction': {
+    imgSrc: SoilWallsImage,  // Replace with appropriate image if different
+    content: 'Content for MSE/ RE/ RS Wall Construction.',
+  },
+  'Reinforced Soil Slopes (RSS)': {
+    imgSrc: SlopesImage,  // Replace with appropriate image if different
+    content: 'Content for Reinforced Soil Slopes (RSS).',
+  },
+  'Erosion Control': {
+    imgSrc: ErosionImage,  // Replace with appropriate image if different
+    content: 'Content for Erosion Control.',
+  },
+  'Concrete Form-liner': {
+    imgSrc: LinerImage,  // Replace with appropriate image if different
+    content: 'Content for Concrete Form-liner.',
+  },
+  'Soil Nailing': {
+    imgSrc: NailingImage,  // Replace with appropriate image if different
+    content: 'Content for Soil Nailing.',
+  },
+  'Crash Barrier Construction': {
+    imgSrc: RockfallImage,  // Replace with appropriate image if different
+    content: 'Content for Crash Barrier Construction.',
+  },
+  'RS Wall Repair & Rehabilitation': {
+    imgSrc: ImprovementImage,  // Replace with appropriate image if different
+    content: 'Content for RS Wall Repair & Rehabilitation.',
+  },
 };
 
-// Application page
-const Application = () => {
-  // Slider settings
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000, // Change slide every 4 seconds
-    prevArrow: (
-      <button
-        style={{
-          backgroundColor: '#000',
-          color: '#fff',
-          borderRadius: '50%',
-          width: '40px',
-          height: '40px',
-          fontSize: '20px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          position: 'absolute',
-          left: '10px',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          zIndex: 1,
-          border: 'none',
-        }}
-      >
-        <ChevronLeftIcon style={{ width: '24px', height: '24px' }} />
-      </button>
-    ),
-    nextArrow: (
-      <button
-        style={{
-          backgroundColor: '#000',
-          color: '#fff',
-          borderRadius: '50%',
-          width: '40px',
-          height: '40px',
-          fontSize: '20px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          position: 'absolute',
-          right: '10px',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          zIndex: 1,
-          border: 'none',
-        }}
-      >
-        <ChevronRightIcon style={{ width: '24px', height: '24px' }} />
-      </button>
-    ),
-    responsive: [
-      {
-        breakpoint: 1024, // Medium screens
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768, // Small screens
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
+function Application() {
+  const [activeTab, setActiveTab] = useState('MSE/ RE/ RS Wall Construction');
 
   return (
-    <div style={{ padding: '32px', position: 'relative', height: '100vh', width: '100vw', boxShadow: '0 4px 12px rgba(0,0,0,0.2)', borderRadius: '8px' }}>
-      <h1
-        style={{
-          textAlign: 'center',
-          fontSize: '42px',
-          fontWeight: 'bold',
-          color: '#FFA500',
-          marginBottom: '32px',
-          textDecoration: 'underline',
-          animation: 'fadeIn 2s', // Animate.css
-        }}
-        
-      >
-        Application
-      </h1>
-      <h3 className=' text-center text-3xl pb-5'>
-      Earthcon Systems (India) Pvt. Ltd.
-      </h3>
+    <div className="text-center p-9 ">
+      {/* Heading */}
+      <div className="mb-8">
+        <div className="text-3xl lg:text-5xl font-semibold mb-4">
+          <span className="text-orange-500">Application</span>
+          {/* <span className="text-black"> Us</span> */}
+        </div>
+        {/* <p className="text-base lg:text-lg leading-relaxed">
+          Earthcon Systems (India) Pvt. Ltd., an ISO: 9001:2015 organization, is committed to providing comprehensive services like design, supply, and construction in the fields of:
+        </p> */}
+      </div>
       
-      <Slider {...settings}>
-        <div>
-          <Card
-            heading="MSE/ RE/ RS Wall Construction"
-            imageSrc="https://via.placeholder.com/600x400"
-            content={[
-              'Point 1 about MSE/RE/RS Wall Construction.',
-              'Point 2 about MSE/RE/RS Wall Construction.',
-              'Point 3 about MSE/RE/RS Wall Construction.',
-            ]}
-            link="#"
-          />
+      {/* Main content section */}
+      <div className="w-full flex flex-col lg:flex-row">
+        {/* Left Section - Slider for buttons */}
+        <div className="lg:w-1/4 bg-orange-600 text-white p-4 lg:p-8 flex flex-col">
+          {/* Buttons for Tabs */}
+          <div className="overflow-x-auto lg:overflow-visible whitespace-nowrap lg:flex lg:flex-col">
+            <div className="flex flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4">
+              {Object.keys(tabContent).map((tab) => (
+                <button
+                  key={tab}
+                  className={`py-2 px-4 mb-2 rounded-lg border-2 transition-all duration-300 ease-in-out transform hover:scale-105 ${
+                    activeTab === tab
+                      ? 'bg-white text-black border-black transform scale-105'
+                      : 'bg-orange-700 text-white border-orange-700'
+                  }`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
-        <div>
-          <Card
-            heading="Reinforced Soil Slopes (RSS)"
-            imageSrc="https://via.placeholder.com/600x400"
-            content={[
-              'Point 1 about Reinforced Soil Slopes (RSS).',
-              'Point 2 about Reinforced Soil Slopes (RSS).',
-              'Point 3 about Reinforced Soil Slopes (RSS).',
-            ]}
-            link="#"
-          />
+
+        {/* Right Section - Content */}
+        <div className="lg:w-3/4 p-4 lg:p-8 flex flex-col">
+          <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
+            <div className="flex-1 animate__animated animate__fadeIn">
+              <img
+                src={tabContent[activeTab].imgSrc}
+                alt={activeTab}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex-1 animate__animated animate__fadeIn">
+              <h2 className="text-xl lg:text-2xl font-bold mb-4">{activeTab}</h2>
+              <p className="text-base lg:text-lg leading-relaxed">
+                {tabContent[activeTab].content}
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <Card
-            heading="Erosion Control"
-            imageSrc="https://via.placeholder.com/600x400"
-            content={[
-              'Point 1 about Erosion Control.',
-              'Point 2 about Erosion Control.',
-              'Point 3 about Erosion Control.',
-            ]}
-            link="#"
-          />
-        </div>
-        <div>
-          <Card
-            heading="Concrete Form-liner"
-            imageSrc="https://via.placeholder.com/600x400"
-            content={[
-              'Point 1 about Concrete Form-liner.',
-              'Point 2 about Concrete Form-liner.',
-              'Point 3 about Concrete Form-liner.',
-            ]}
-            link="#"
-          />
-        </div>
-        <div>
-          <Card
-            heading="Soil Nailing"
-            imageSrc="https://via.placeholder.com/600x400"
-            content={[
-              'Point 1 about Soil Nailing.',
-              'Point 2 about Soil Nailing.',
-              'Point 3 about Soil Nailing.',
-            ]}
-            link="#"
-          />
-        </div>
-        <div>
-          <Card
-            heading="Crash Barrier Construction"
-            imageSrc="https://via.placeholder.com/600x400"
-            content={[
-              'Point 1 about Crash Barrier Construction.',
-              'Point 2 about Crash Barrier Construction.',
-              'Point 3 about Crash Barrier Construction.',
-            ]}
-            link="#"
-          />
-        </div>
-        <div>
-          <Card
-            heading="RS Wall Repair & Rehabilitation"
-            imageSrc="https://via.placeholder.com/600x400"
-            content={[
-              'Point 1 about RS Wall Repair & Rehabilitation.',
-              'Point 2 about RS Wall Repair & Rehabilitation.',
-              'Point 3 about RS Wall Repair & Rehabilitation.',
-            ]}
-            link="#"
-          />
-        </div>
-      </Slider>
+      </div>
     </div>
   );
-};
+}
 
 export default Application;
