@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/esipl/static/css/main.c2eeec66.css",
-    "main.js": "/esipl/static/js/main.db5043de.js",
+    "main.css": "/esipl/static/css/main.a66c269a.css",
+    "main.js": "/esipl/static/js/main.fef77369.js",
     "static/css/283.8d74afca.chunk.css": "/esipl/static/css/283.8d74afca.chunk.css",
-    "static/js/283.65a40cfb.chunk.js": "/esipl/static/js/283.65a40cfb.chunk.js",
-    "static/js/411.5c2c9a83.chunk.js": "/esipl/static/js/411.5c2c9a83.chunk.js",
-    "static/js/453.749773d2.chunk.js": "/esipl/static/js/453.749773d2.chunk.js",
-    "static/css/386.d51f965a.chunk.css": "/esipl/static/css/386.d51f965a.chunk.css",
-    "static/js/386.c23eb7e9.chunk.js": "/esipl/static/js/386.c23eb7e9.chunk.js",
+    "static/js/283.47d47be5.chunk.js": "/esipl/static/js/283.47d47be5.chunk.js",
+    "static/js/411.87cc1983.chunk.js": "/esipl/static/js/411.87cc1983.chunk.js",
+    "static/js/453.ef2d6374.chunk.js": "/esipl/static/js/453.ef2d6374.chunk.js",
+    "static/css/410.00066286.chunk.css": "/esipl/static/css/410.00066286.chunk.css",
+    "static/js/410.fd7a851c.chunk.js": "/esipl/static/js/410.fd7a851c.chunk.js",
     "static/media/client3.jpg": "/esipl/static/media/client3.9ba33bd9a88588fd4165.jpg",
     "static/media/client5.jpg": "/esipl/static/media/client5.d98f98f9ef88a1e455c1.jpg",
     "static/media/client2.jpg": "/esipl/static/media/client2.53491c7f79b9fe062455.jpg",
@@ -19,17 +19,17 @@
     "static/media/slick.ttf": "/esipl/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/esipl/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/esipl/index.html",
-    "main.c2eeec66.css.map": "/esipl/static/css/main.c2eeec66.css.map",
-    "main.db5043de.js.map": "/esipl/static/js/main.db5043de.js.map",
+    "main.a66c269a.css.map": "/esipl/static/css/main.a66c269a.css.map",
+    "main.fef77369.js.map": "/esipl/static/js/main.fef77369.js.map",
     "283.8d74afca.chunk.css.map": "/esipl/static/css/283.8d74afca.chunk.css.map",
-    "283.65a40cfb.chunk.js.map": "/esipl/static/js/283.65a40cfb.chunk.js.map",
-    "411.5c2c9a83.chunk.js.map": "/esipl/static/js/411.5c2c9a83.chunk.js.map",
-    "453.749773d2.chunk.js.map": "/esipl/static/js/453.749773d2.chunk.js.map",
-    "386.d51f965a.chunk.css.map": "/esipl/static/css/386.d51f965a.chunk.css.map",
-    "386.c23eb7e9.chunk.js.map": "/esipl/static/js/386.c23eb7e9.chunk.js.map"
+    "283.47d47be5.chunk.js.map": "/esipl/static/js/283.47d47be5.chunk.js.map",
+    "411.87cc1983.chunk.js.map": "/esipl/static/js/411.87cc1983.chunk.js.map",
+    "453.ef2d6374.chunk.js.map": "/esipl/static/js/453.ef2d6374.chunk.js.map",
+    "410.00066286.chunk.css.map": "/esipl/static/css/410.00066286.chunk.css.map",
+    "410.fd7a851c.chunk.js.map": "/esipl/static/js/410.fd7a851c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2eeec66.css",
-    "static/js/main.db5043de.js"
+    "static/css/main.a66c269a.css",
+    "static/js/main.fef77369.js"
   ]
 }
