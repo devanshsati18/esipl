@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaInfoCircle } from 'react-icons/fa';
 import 'animate.css'; // Import Animate.css
 
 // Import images
@@ -8,52 +7,56 @@ import SlopesImage from './OIP.jpeg';
 import ImprovementImage from './OIP.jpeg';
 import NailingImage from './OIP.jpeg';
 import RockfallImage from './OIP.jpeg';
-import PavementImage from './OIP.jpeg';
 import ErosionImage from './OIP.jpeg';
 import LinerImage from './OIP.jpeg';
 
 // Dummy content for tabs
 const tabContent = {
-  'MSE/ RE/ RS Wall Construction': {
+  'Retaining Structures': {
     imgSrc: SoilWallsImage,  // Replace with appropriate image if different
-    content: 'Content for MSE/ RE/ RS Wall Construction.',
+    content: "Retaining structures are essential components in civil engineering, used to hold back soil or rock and prevent erosion or collapse. They are commonly employed in situations where there's a significant difference in ground elevation.",
   },
-  'Reinforced Soil Slopes (RSS)': {
+  'Geohazard Mitigation': {
     imgSrc: SlopesImage,  // Replace with appropriate image if different
-    content: 'Content for Reinforced Soil Slopes (RSS).',
+    content: "Geohazard mitigation involves strategies and techniques to reduce or manage the risks associated with geological hazards such as landslides, earthquakes, floods, and volcanic eruptions. Effective mitigation aims to protect lives, property, and infrastructure while minimizing the economic and environmental impacts of these hazards.",
+  },
+  'Geosynthetic Pavement Applications': {
+    imgSrc: ErosionImage,  // Replace with appropriate image if different
+    content: "Geosynthetics are versatile materials used in civil engineering to improve the performance and longevity of pavements. They include various types of synthetic materials, such as geotextiles, geomembranes, geogrids, and geocells. In pavement applications, geosynthetics can offer several benefits, including enhanced strength, durability, and drainage.",
+  },
+  'Ground Improvements': {
+    imgSrc: LinerImage,  // Replace with appropriate image if different
+    content: "Ground improvement techniques are essential in civil engineering to enhance the properties of soil and rock, making them more suitable for supporting structures. These techniques are employed to address issues such as weak or compressible soils, high water content, or potential for settlement.",
+  },
+  'Reinforced Soil Slope': {
+    imgSrc: NailingImage,  // Replace with appropriate image if different
+    content: "A reinforced soil slope is a geotechnical engineering solution designed to stabilize and improve the performance of slopes made of soil. This technique combines soil with reinforcing materials to enhance its strength, reduce potential for failure, and improve overall stability.",
   },
   'Erosion Control': {
-    imgSrc: ErosionImage,  // Replace with appropriate image if different
-    content: 'Content for Erosion Control.',
-  },
-  'Concrete Form-liner': {
-    imgSrc: LinerImage,  // Replace with appropriate image if different
-    content: 'Content for Concrete Form-liner.',
-  },
-  'Soil Nailing': {
-    imgSrc: NailingImage,  // Replace with appropriate image if different
-    content: 'Content for Soil Nailing.',
-  },
-  'Crash Barrier Construction': {
     imgSrc: RockfallImage,  // Replace with appropriate image if different
-    content: 'Content for Crash Barrier Construction.',
+    content: "Erosion control is a critical aspect of environmental management and civil engineering, aimed at preventing soil loss, maintaining land stability, and protecting water quality. Erosion can be caused by factors such as wind, water, and human activities, and can lead to significant environmental and structural issues.",
   },
-  'RS Wall Repair & Rehabilitation': {
+  'Repair & Rehabilitation': {
     imgSrc: ImprovementImage,  // Replace with appropriate image if different
-    content: 'Content for RS Wall Repair & Rehabilitation.',
+    content: "Repair and rehabilitation are essential aspects of maintaining and extending the life of infrastructure and structures. They involve addressing issues caused by wear and tear, damage, or deterioration to restore functionality, safety, and aesthetics.",
+  },
+  'Friction Slab Crash Barrier Construction': {
+    imgSrc: ImprovementImage,  // Replace with appropriate image if different
+    content: "A friction slab crash barrier is a type of safety barrier designed to protect vehicles from colliding with roadside obstacles, such as bridges or retaining walls, and to prevent them from veering off the road. These barriers are particularly useful in areas where conventional barriers might not be suitable due to space constraints or aesthetic considerations",
   },
 };
 
 
 function Application() {
-  const [activeTab, setActiveTab] = useState('MSE/ RE/ RS Wall Construction');
+  const [activeTab, setActiveTab] = useState('Retaining Structures');
 
   return (
     <div className="text-center p-9 ">
       {/* Heading */}
       <div className="mb-8">
         <div className="text-3xl lg:text-5xl font-semibold mb-4">
-          <span className="text-orange-500">Application</span>
+          <span className="text-orange-500">What We</span>
+          <span className="text-balck"> Do</span>
           {/* <span className="text-black"> Us</span> */}
         </div>
         {/* <p className="text-base lg:text-lg leading-relaxed">
@@ -86,7 +89,7 @@ function Application() {
         </div>
 
         {/* Right Section - Content */}
-        <div className="lg:w-3/4 p-4 lg:p-8 flex flex-col">
+        <div className="lg:w-3/4 p-4 lg:p-8 flex flex-col bg-gray-300">
           <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
             <div className="flex-1 animate__animated animate__fadeIn">
               <img

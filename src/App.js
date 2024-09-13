@@ -24,7 +24,7 @@ function App() {
       <Layout>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/esipl" element={<HomePage />} />
             <Route path="/gallery" element={<Gallery />} />
             {/* Add more routes for the application dropdown links */}
             <Route path="*" element={<div>404 Not Found</div>} /> {/* Fallback for undefined routes */}

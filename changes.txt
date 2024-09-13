@@ -1,2 +1,3 @@
-remove the gallery
-Application Single screen
+1. Home page par jo Quote hai vo cut hore hai unhe thik karlo
+
+7. New me animation aaye jitni baar bhi hum use dekhes

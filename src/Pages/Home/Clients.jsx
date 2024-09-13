@@ -1,6 +1,5 @@
 import React from "react";
 import { useSpring, animated } from "@react-spring/web";
-import { Link } from "react-router-dom";
 
 // Import images from internal folder
 import client1 from "../../Assets/Clients/client1.jpg";
@@ -94,9 +93,6 @@ function Clients() {
                 ))}
               </animated.div>
             </div>
-            <Link to="/more" className="mt-10 text-blue-600 underline">
-              View More
-            </Link>
           </div>
         </div>
       );

@@ -13,22 +13,22 @@ const HomePage = () => {
             </div>
             
             {/* About Us Section */}
-            <div className="py-8">
+            <div >
                 <AboutUs />
             </div>
             
             {/* News Section */}
-            <div className="py-8">
+            <div >
                 <News />
             </div>
             
             {/* Application Section */}
-            <div className="py-8">
+            <div >
                 <Application />
             </div>
             
             {/* Clients Section */}
-            <div className="py-8">
+            <div >
                 <Clients />
             </div>
         </div>

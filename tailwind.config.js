@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         'custom-blue': '#0000FF',
         'custom-orange': '#FFA500',
+        'custom-blue-hover': 'rgba(0, 0, 255, 0.25)', // 25% opacity
       },
     },
   },

@@ -7,7 +7,7 @@ export function CustomSlider() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 3500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -46,16 +46,16 @@ export function CustomSlider() {
 
   const slidesContent = [
     {
-      heading: "Heading for Image 1",
-      content: "Content for image 1 with more details here.",
+      heading: "Building tomorrow's foundation today",
+      /* content: "Content for image 1 with more details here.", */
     },
     {
-      heading: "Heading for Image 2",
-      content: "Content for image 2 with more details here.",
+      heading: "Creating tomorrow's landmarks with today's expertise",
+      /* content: "Content for image 2 with more details here.", */
     },
     {
-      heading: "Heading for Image 3",
-      content: "Content for image 3 with more details here.",
+      heading: "Crafting the pillars of progress for tomorrow",
+      /* content: "Content for image 3 with more details here.", */
     },
   ];
 
@@ -98,18 +98,34 @@ export function CustomSlider() {
           clipPath: 'polygon(0% 0%, 60% 0%, 20% 100%, 0% 100%)',
           zIndex: 1,
           display: 'flex',
-          alignItems: 'center',
+          flexDirection: 'column',
+          justifyContent: 'center', // Centers content vertically
+          alignItems: 'flex-start',
+          padding: '1rem', // Padding to avoid text touching the edges
+          boxSizing: 'border-box', // Ensures padding is included in width/height
         }}
-        className="flex items-center justify-start p-8"
       >
-        <div className="ml-12">
+        <div className="text-left">
           <h1
-            className={`text-white text-4xl font-bold ${currentSlide === 0 ? 'animate-slide-in' : 'animate-slide-out'}`}
+            className={`text-white text-2xl md:text-3xl lg:text-4xl font-bold ${currentSlide === 0 ? 'animate-slide-in' : 'animate-slide-out'}`}
+            style={{ 
+              overflowWrap: 'break-word', 
+              wordBreak: 'break-word', 
+              margin: 0, 
+              lineHeight: '1.2', 
+              maxWidth: '90%' // Constrain width if necessary
+            }} 
           >
             {slidesContent[currentSlide].heading}
           </h1>
           <p
-            className={`text-white text-lg ${currentSlide === 0 ? 'animate-slide-in' : 'animate-slide-out'}`}
+            className={`text-white text-sm md:text-base lg:text-lg ${currentSlide === 0 ? 'animate-slide-in' : 'animate-slide-out'}`}
+            style={{ 
+              overflowWrap: 'break-word', 
+              wordBreak: 'break-word', 
+              margin: '0.5rem 0 0 0', 
+              lineHeight: '1.5' 
+            }} 
           >
             {slidesContent[currentSlide].content}
           </p>
@@ -118,8 +134,5 @@ export function CustomSlider() {
     </div>
   );
 }
-
-
-
 
 export default CustomSlider;

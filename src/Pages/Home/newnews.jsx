@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import { FaNewspaper } from 'react-icons/fa'; // Importing an icon from react-icons
-import './News.css';
+import './newnews.css';
 
-const News = () => {
+const Newnews = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate');
+          } else {
+            entry.target.classList.remove('animate');
           }
         });
       },
@@ -94,4 +96,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Newnews;
