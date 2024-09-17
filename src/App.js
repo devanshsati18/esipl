@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Common/Navbar';
 import Footer from './Common/Footer';
 
+import Gallery from './Pages/Gallery/Gallery';
+
 // Lazy load pages
 const HomePage = lazy(() => import('./Pages/Home/HomePage'));
-const Gallery = lazy(() => import('./Pages/Gallery/Gallery'));
+/* const Gallery = lazy(() => import('./Pages/Gallery/Gallery')); */
 
 // Layout Component 
 function Layout({ children }) {

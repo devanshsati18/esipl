@@ -38,23 +38,30 @@ function Navbar() {
         <Link to="/gallery" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">What We Do</Link>
         <Link to="/gallery" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Gallery</Link>
         <Link to="/gallery" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Projects</Link>
-        <Link to="/gallery" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Knowledge Center</Link>
-        <Link to="/gallery" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Careers</Link>
-        {/* <div
+        <div
           className="relative"
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}
         >
           <button className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">
-            Application
+            Knowledge Center
           </button>
           {isOpen && (
             <div className="absolute left-0 bg-white mt-2 rounded shadow-lg z-20 w-48">
-              <Link to="/app1" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">App 1</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">App 2</Link>
+              <Link to="/app1" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Company Profile</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Core Studies</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Drawings</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Papers</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Installation Guides</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Presentation</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Things To Avoid Bad Practices</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Important Circulars</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">ISO Certificates(ESIPL & Globe)</Link>
             </div>
           )}
-        </div> */}
+        </div>
+        <Link to="/gallery" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Careers</Link>
+        
       </div>
 
       {/* Drawer Button for Small Screens */}
