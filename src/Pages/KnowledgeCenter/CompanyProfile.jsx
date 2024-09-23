@@ -1,6 +1,7 @@
 const CompanyProfile =()=>{
     return(
         <div>
+            Company Profile
 
         </div>
     )
