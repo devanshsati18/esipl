@@ -52,7 +52,7 @@ function Navbar() {
           )}
         </div>
         <Link to="/gallery" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Gallery</Link>
-        <Link to="/projects" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Projects</Link>
+        <Link to="/Projects" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Projects</Link>
         <div className="relative" onMouseEnter={() => handleMouseEnter('knowledgeCenter')} onMouseLeave={handleMouseLeave}>
           <button className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">
             Knowledge Center

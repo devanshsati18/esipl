@@ -10,6 +10,16 @@ module.exports = {
         'lg': '1024px',
         // Add custom breakpoints here
       },
+      animation: {
+        fadeInOut: 'fadeInOut 3s ease-in-out forwards',
+      },
+      keyframes: {
+        fadeInOut: {
+          '0%': { opacity: '1' },
+          '50%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
       colors: {
         'custom-blue': '#0000FF',
         'custom-orange': '#FFA500',

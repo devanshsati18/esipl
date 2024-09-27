@@ -11,6 +11,9 @@ import Gallery from './Pages/Gallery/Gallery';
 import GeohazardMitigation from './Pages/WhatWeDo/GeohazardMitigation.jsx'
 import GroundImprovements from './Pages/WhatWeDo/GroundImprovements.jsx';
 
+//Projets
+import Projects from './Pages/Projects/Projects.jsx'
+
 
 // Lazy load pages
 const HomePage = lazy(() => import('./Pages/Home/HomePage'));
@@ -40,6 +43,9 @@ function App() {
             {/* What We Do pages path */}
             <Route path='/GeohazardMitigation' element={<GeohazardMitigation />} />
             <Route path='/GroundImprovements' element={<GroundImprovements />} />
+
+            {/* Projects pages path */}
+            <Route path='/Projects' element={<Projects />} />
             <Route path="*" element={<div>404 Not Found</div>} /> {/* Fallback for undefined routes */}
           </Routes>
         </Suspense>
