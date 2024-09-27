@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/esipl/static/css/main.08cdb68b.css",
-    "main.js": "/esipl/static/js/main.2b77399d.js",
+    "main.css": "/esipl/static/css/main.13e4ffb2.css",
+    "main.js": "/esipl/static/js/main.dc9e88e4.js",
     "static/css/283.8d74afca.chunk.css": "/esipl/static/css/283.8d74afca.chunk.css",
     "static/js/283.8b0db4f2.chunk.js": "/esipl/static/js/283.8b0db4f2.chunk.js",
     "static/js/453.ef2d6374.chunk.js": "/esipl/static/js/453.ef2d6374.chunk.js",
@@ -113,8 +113,8 @@
     "static/media/slick.ttf": "/esipl/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/esipl/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/esipl/index.html",
-    "main.08cdb68b.css.map": "/esipl/static/css/main.08cdb68b.css.map",
-    "main.2b77399d.js.map": "/esipl/static/js/main.2b77399d.js.map",
+    "main.13e4ffb2.css.map": "/esipl/static/css/main.13e4ffb2.css.map",
+    "main.dc9e88e4.js.map": "/esipl/static/js/main.dc9e88e4.js.map",
     "283.8d74afca.chunk.css.map": "/esipl/static/css/283.8d74afca.chunk.css.map",
     "283.8b0db4f2.chunk.js.map": "/esipl/static/js/283.8b0db4f2.chunk.js.map",
     "453.ef2d6374.chunk.js.map": "/esipl/static/js/453.ef2d6374.chunk.js.map",
@@ -122,7 +122,7 @@
     "410.10aadbc1.chunk.js.map": "/esipl/static/js/410.10aadbc1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08cdb68b.css",
-    "static/js/main.2b77399d.js"
+    "static/css/main.13e4ffb2.css",
+    "static/js/main.dc9e88e4.js"
   ]
 }
