@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/esipl/static/css/main.3cc00265.css",
-    "main.js": "/esipl/static/js/main.241487a2.js",
-    "static/css/283.8d74afca.chunk.css": "/esipl/static/css/283.8d74afca.chunk.css",
-    "static/js/283.8b0db4f2.chunk.js": "/esipl/static/js/283.8b0db4f2.chunk.js",
+    "main.js": "/esipl/static/js/main.ea3dc0bd.js",
+    "static/css/215.3be04358.chunk.css": "/esipl/static/css/215.3be04358.chunk.css",
+    "static/js/215.b2199f89.chunk.js": "/esipl/static/js/215.b2199f89.chunk.js",
     "static/js/453.ef2d6374.chunk.js": "/esipl/static/js/453.ef2d6374.chunk.js",
     "static/css/80.2decdcfe.chunk.css": "/esipl/static/css/80.2decdcfe.chunk.css",
     "static/js/80.ff38e545.chunk.js": "/esipl/static/js/80.ff38e545.chunk.js",
@@ -100,11 +100,14 @@
     "static/media/44.jpeg": "/esipl/static/media/44.29f6b645392c63cdedf8.jpeg",
     "static/media/39.jpeg": "/esipl/static/media/39.6abe47ffa05e50294659.jpeg",
     "static/media/41.jpeg": "/esipl/static/media/41.9b54f1aa7380dfe9ee0b.jpeg",
+    "static/media/bg1.jpg": "/esipl/static/media/bg1.db4037348a0e3a53e479.jpg",
     "static/media/42.jpeg": "/esipl/static/media/42.20377a96deba71d8354b.jpeg",
     "static/media/40.jpeg": "/esipl/static/media/40.b581559ba6503df547ab.jpeg",
     "static/media/43.jpeg": "/esipl/static/media/43.b53d2ce0452fae296936.jpeg",
+    "static/media/bg2.jpg": "/esipl/static/media/bg2.77dbe26f5eeee90d739d.jpg",
     "static/media/client5.jpg": "/esipl/static/media/client5.d98f98f9ef88a1e455c1.jpg",
     "static/media/client2.jpg": "/esipl/static/media/client2.53491c7f79b9fe062455.jpg",
+    "static/media/bg3.jpg": "/esipl/static/media/bg3.384ea31d2a90ff81023c.jpg",
     "static/media/client1.jpg": "/esipl/static/media/client1.27be7ce07ec9db9ea43b.jpg",
     "static/media/client6.jpg": "/esipl/static/media/client6.5f63ecd1fd6cd20eec92.jpg",
     "static/media/client4.jpg": "/esipl/static/media/client4.248fe9d4054b54115593.jpg",
@@ -114,15 +117,15 @@
     "static/media/slick.woff": "/esipl/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/esipl/index.html",
     "main.3cc00265.css.map": "/esipl/static/css/main.3cc00265.css.map",
-    "main.241487a2.js.map": "/esipl/static/js/main.241487a2.js.map",
-    "283.8d74afca.chunk.css.map": "/esipl/static/css/283.8d74afca.chunk.css.map",
-    "283.8b0db4f2.chunk.js.map": "/esipl/static/js/283.8b0db4f2.chunk.js.map",
+    "main.ea3dc0bd.js.map": "/esipl/static/js/main.ea3dc0bd.js.map",
+    "215.3be04358.chunk.css.map": "/esipl/static/css/215.3be04358.chunk.css.map",
+    "215.b2199f89.chunk.js.map": "/esipl/static/js/215.b2199f89.chunk.js.map",
     "453.ef2d6374.chunk.js.map": "/esipl/static/js/453.ef2d6374.chunk.js.map",
     "80.2decdcfe.chunk.css.map": "/esipl/static/css/80.2decdcfe.chunk.css.map",
     "80.ff38e545.chunk.js.map": "/esipl/static/js/80.ff38e545.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cc00265.css",
-    "static/js/main.241487a2.js"
+    "static/js/main.ea3dc0bd.js"
   ]
 }
