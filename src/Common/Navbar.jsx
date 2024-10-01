@@ -39,7 +39,7 @@ function Navbar() {
     <nav className={`text-white p-4 flex justify-center items-center h-[7vh] fixed top-0 left-0 right-0 transition-transform duration-300 ${visible ? 'transform-none' : '-translate-y-full'} z-50 bg-transparent hover:bg-blue-500 hover:bg-opacity-70 hover:delay-300`}>
       {/* Centered Content */}
       <div className="hidden lg:flex items-center space-x-4">
-        <Link to="/esipl" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Home</Link>
+        <Link to="" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Home</Link>
         <div className="relative" onMouseEnter={() => handleMouseEnter('whatWeDo')} onMouseLeave={handleMouseLeave}>
           <button className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">
             What We Do
@@ -48,6 +48,12 @@ function Navbar() {
             <div className="absolute left-0 bg-white mt-2 rounded shadow-lg z-20 w-48">
               <Link to="/GeohazardMitigation" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Geohazard Mitigation</Link>
               <Link to="/GroundImprovements" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Ground Improvements</Link>
+              <Link to="/RetainingStructures" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Retaining Structures</Link>
+              <Link to="GeosyntheticPavementApplications" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Geosynthetic Pavement Applications</Link>
+              <Link to="/ReinforcedSoilSlope" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Reinforced Soil Slope</Link>
+              <Link to="/ErosionControl" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Erosion Control</Link>
+              <Link to="/RepairRehabilitation" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Repair & Rehabilitation</Link>
+              <Link to="/FrictionSlabcumCrashBarrier" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Friction Slab cum Crash Barrier</Link>
             </div>
           )}
         </div>

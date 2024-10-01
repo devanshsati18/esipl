@@ -10,9 +10,15 @@ import Gallery from './Pages/Gallery/Gallery';
 //What We Do
 import GeohazardMitigation from './Pages/WhatWeDo/GeohazardMitigation.jsx'
 import GroundImprovements from './Pages/WhatWeDo/GroundImprovements.jsx';
+import GeosyntheticPavementApplications from './Pages/WhatWeDo/GeosyntheticPavementApplications.jsx'
+import ReinforcedSoilSlope from './Pages/WhatWeDo/ReinforcedSoilSlope.jsx'
+import ErosionControl from './Pages/WhatWeDo/ErosionControl.jsx'
+import RepairRehabilitation from './Pages/WhatWeDo/Repair&Rehabilitation.jsx'
+import FrictionSlabcumCrashBarrier from './Pages/WhatWeDo/FrictionSlabcumCrashBarrier.jsx'
 
 //Projets
 import Projects from './Pages/Projects/Projects.jsx'
+import RetainingStructures from './Pages/WhatWeDo/RetainingStructures.jsx';
 
 
 // Lazy load pages
@@ -36,13 +42,19 @@ function App() {
       <Layout>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/esipl" element={<HomePage />} />
+            <Route path="" element={<HomePage />} />
             <Route path="/gallery" element={<Gallery />} />
             {/* Add more routes for the application dropdown links */}
 
             {/* What We Do pages path */}
             <Route path='/GeohazardMitigation' element={<GeohazardMitigation />} />
             <Route path='/GroundImprovements' element={<GroundImprovements />} />
+            <Route path='/RetainingStructures' element={<RetainingStructures />} />
+            <Route path='/GeosyntheticPavementApplications' element={<GeosyntheticPavementApplications />} />
+            <Route path='/ReinforcedSoilSlope' element={<ReinforcedSoilSlope />} />
+            <Route path='/ErosionControl' element={<ErosionControl />} />
+            <Route path='/RepairRehabilitation' element={<RepairRehabilitation />} />
+            <Route path='/FrictionSlabcumCrashBarrier' element={<FrictionSlabcumCrashBarrier />} />
 
             {/* Projects pages path */}
             <Route path='/Projects' element={<Projects />} />

@@ -1,0 +1,40 @@
+/* Gallery.css */
+
+/* Ensure the greeting overlay covers the entire screen */
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Smooth fade transitions for the greeting */
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Additional hover effects for images */
+.image-card:hover img {
+    transform: scale(1.1);
+}
+
+.image-card:hover .overlay {
+    opacity: 0.6;
+}
+
+.image-card:hover .overlay-text {
+    opacity: 1;
+}

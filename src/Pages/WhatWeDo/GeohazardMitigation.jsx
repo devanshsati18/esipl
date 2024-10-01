@@ -1,10 +1,172 @@
-import React from "react";
-const GeohazardMitigation=()=>{
-    return(
-        <div>
-            Geohazard Mitigation
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+
+const imageSliderData = [
+  "https://via.placeholder.com/400x400",
+  "https://via.placeholder.com/400x400/ff6347",
+  "https://via.placeholder.com/400x400/4682b4",
+];
+
+const solutionContent = {
+  rockfallBarrier: {
+    title: "Rockfall Barrier",
+    content: "A rockfall barrier is a protective structure designed to intercept and stop falling rocks or debris from reaching areas of high value, such as roads, buildings, or infrastructure.",
+    image: "https://via.placeholder.com/400x250/ff6347",
+  },
+  draperySystem: {
+    title: "Rockfall Drapery Systems",
+    content: "A rockfall drapery system is a type of rockfall protection designed to stabilize and control loose rocks on steep or unstable slopes.",
+    image: "https://via.placeholder.com/400x250/4682b4",
+  },
+  rockBolting: {
+    title: "Rock Bolting",
+    content: "Rock bolting is a ground support technique used in geotechnical engineering and mining to stabilize rock masses.",
+    image: "https://via.placeholder.com/400x250/ff6347",
+  },
+};
+
+const GeohazardMitigation = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentSolution, setCurrentSolution] = useState("rockfallBarrier");
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === imageSliderData.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-100 p-8">
+      {/* Hero Section */}
+      <motion.div
+        className="text-center mb-16"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        {/* Reduced the size of the heading */}
+        <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
+          Geohazard Mitigation
+        </h1>
+        <p className="text-2xl mt-4 text-gray-600">Mitigating risks, securing the future.</p>
+      </motion.div>
+
+      {/* Main Content Section */}
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+        {/* Left: Image with adjusted height */}
+        <motion.div
+          className="lg:w-1/3 w-full"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          {/* Adjusted image height */}
+          <img
+            src={imageSliderData[currentImageIndex]}
+            alt="Geohazard"
+            className="rounded-lg shadow-2xl w-full h-auto"
+            style={{ height: '400px', objectFit: 'cover' }} // Custom height
+          />
+          <button
+            className="mt-6 px-4 py-2 bg-orange-600 text-white rounded-lg shadow-lg hover:bg-orange-700 transition"
+            onClick={handleNextImage}
+          >
+            Next Image
+          </button>
+        </motion.div>
+
+        {/* Right: Text Content */}
+        <motion.div
+          className="lg:w-2/3 w-full bg-white p-10 rounded-lg shadow-lg"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <h2 className="text-5xl font-bold text-orange-500 mb-4">
+            Understanding Geohazards
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Geohazard mitigation involves strategies and measures to reduce or manage the risks associated with geological hazards. These hazards can include events such as landslides, earthquakes, and soil erosion.
+          </p>
+          <p className="text-gray-700 mt-4">
+            Examples include designing and reinforcing infrastructure to withstand seismic activity, implementing erosion control techniques, and safeguarding road infrastructure from potential landslides.
+          </p>
+        </motion.div>
+      </div>
+
+      {/* Types of Solutions Section with Entry Animation */}
+      <motion.div
+        className="mt-24"
+        initial={{ opacity: 0, y: 50 }} // Slide-up and fade-in effect
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h3 className="text-center text-4xl font-bold text-gray-700 mb-10">
+          Types of Solutions to Prevent Geohazard Mitigation
+        </h3>
+
+        {/* Cards with hover effects */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          {/* Rockfall Barrier Card */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className={`p-8 bg-white rounded-lg shadow-xl transform transition-all ${
+              currentSolution === "rockfallBarrier" ? "border-4 border-orange-500" : ""
+            }`}
+            onClick={() => setCurrentSolution("rockfallBarrier")}
+          >
+            <h4 className="text-2xl font-bold text-orange-500">Rockfall Barrier</h4>
+            <p className="text-gray-600 mt-2">Intercept and stop falling rocks or debris.</p>
+          </motion.div>
+
+          {/* Drapery Systems Card */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className={`p-8 bg-white rounded-lg shadow-xl transform transition-all ${
+              currentSolution === "draperySystem" ? "border-4 border-orange-500" : ""
+            }`}
+            onClick={() => setCurrentSolution("draperySystem")}
+          >
+            <h4 className="text-2xl font-bold text-orange-500">Rockfall Drapery Systems</h4>
+            <p className="text-gray-600 mt-2">Stabilize and control loose rocks on slopes.</p>
+          </motion.div>
+
+          {/* Rock Bolting Card */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className={`p-8 bg-white rounded-lg shadow-xl transform transition-all ${
+              currentSolution === "rockBolting" ? "border-4 border-orange-500" : ""
+            }`}
+            onClick={() => setCurrentSolution("rockBolting")}
+          >
+            <h4 className="text-2xl font-bold text-orange-500">Rock Bolting</h4>
+            <p className="text-gray-600 mt-2">A ground support technique to stabilize rock masses.</p>
+          </motion.div>
         </div>
-    )
-}
+
+        {/* Solution Content Below */}
+        <motion.div
+          className="mt-12 bg-white p-8 rounded-lg shadow-lg"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h4 className="text-2xl font-bold text-orange-500 mb-4">
+            {solutionContent[currentSolution].title}
+          </h4>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            {solutionContent[currentSolution].content}
+          </p>
+          <img
+            src={solutionContent[currentSolution].image}
+            alt={solutionContent[currentSolution].title}
+            className="rounded-lg shadow-lg"
+            style={{ height: '250px', objectFit: 'cover' }} // Custom height for solution images
+          />
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+};
 
 export default GeohazardMitigation;
