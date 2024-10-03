@@ -28,11 +28,16 @@ const solutionContent = {
 const GeohazardMitigation = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentSolution, setCurrentSolution] = useState("rockfallBarrier");
+  const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === imageSliderData.length - 1 ? 0 : prevIndex + 1
     );
+  };
+
+  const toggleDropdown = (solution) => {
+    setOpenDropdown(openDropdown === solution ? null : solution);
   };
 
   return (
@@ -44,7 +49,6 @@ const GeohazardMitigation = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        {/* Reduced the size of the heading */}
         <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
           Geohazard Mitigation
         </h1>
@@ -60,7 +64,6 @@ const GeohazardMitigation = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* Adjusted image height */}
           <img
             src={imageSliderData[currentImageIndex]}
             alt="Geohazard"
@@ -94,7 +97,7 @@ const GeohazardMitigation = () => {
         </motion.div>
       </div>
 
-      {/* Types of Solutions Section with Entry Animation */}
+      {/* Types of Solutions Section with Dropdowns */}
       <motion.div
         className="mt-24"
         initial={{ opacity: 0, y: 50 }} // Slide-up and fade-in effect
@@ -105,66 +108,40 @@ const GeohazardMitigation = () => {
           Types of Solutions to Prevent Geohazard Mitigation
         </h3>
 
-        {/* Cards with hover effects */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-          {/* Rockfall Barrier Card */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className={`p-8 bg-white rounded-lg shadow-xl transform transition-all ${
-              currentSolution === "rockfallBarrier" ? "border-4 border-orange-500" : ""
-            }`}
-            onClick={() => setCurrentSolution("rockfallBarrier")}
-          >
-            <h4 className="text-2xl font-bold text-orange-500">Rockfall Barrier</h4>
-            <p className="text-gray-600 mt-2">Intercept and stop falling rocks or debris.</p>
-          </motion.div>
-
-          {/* Drapery Systems Card */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className={`p-8 bg-white rounded-lg shadow-xl transform transition-all ${
-              currentSolution === "draperySystem" ? "border-4 border-orange-500" : ""
-            }`}
-            onClick={() => setCurrentSolution("draperySystem")}
-          >
-            <h4 className="text-2xl font-bold text-orange-500">Rockfall Drapery Systems</h4>
-            <p className="text-gray-600 mt-2">Stabilize and control loose rocks on slopes.</p>
-          </motion.div>
-
-          {/* Rock Bolting Card */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className={`p-8 bg-white rounded-lg shadow-xl transform transition-all ${
-              currentSolution === "rockBolting" ? "border-4 border-orange-500" : ""
-            }`}
-            onClick={() => setCurrentSolution("rockBolting")}
-          >
-            <h4 className="text-2xl font-bold text-orange-500">Rock Bolting</h4>
-            <p className="text-gray-600 mt-2">A ground support technique to stabilize rock masses.</p>
-          </motion.div>
+        {/* Dropdowns for Solutions */}
+        <div className="flex flex-col gap-4">
+          {Object.keys(solutionContent).map((key) => (
+            <div key={key} className="w-full">
+              <motion.div
+                className="flex items-center justify-between p-4 bg-white rounded-lg shadow-lg cursor-pointer"
+                onClick={() => toggleDropdown(key)}
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <h4 className="text-2xl font-bold text-orange-500">{solutionContent[key].title}</h4>
+                <img
+                  src={solutionContent[key].image}
+                  alt={solutionContent[key].title}
+                  className="w-12 h-12 rounded-lg"
+                />
+              </motion.div>
+              {/* Dropdown Content */}
+              {openDropdown === key && (
+                <motion.div
+                  className="mt-2 p-4 bg-gray-200 rounded-lg"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <p className="text-gray-700">{solutionContent[key].content}</p>
+                </motion.div>
+              )}
+            </div>
+          ))}
         </div>
-
-        {/* Solution Content Below */}
-        <motion.div
-          className="mt-12 bg-white p-8 rounded-lg shadow-lg"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h4 className="text-2xl font-bold text-orange-500 mb-4">
-            {solutionContent[currentSolution].title}
-          </h4>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            {solutionContent[currentSolution].content}
-          </p>
-          <img
-            src={solutionContent[currentSolution].image}
-            alt={solutionContent[currentSolution].title}
-            className="rounded-lg shadow-lg"
-            style={{ height: '250px', objectFit: 'cover' }} // Custom height for solution images
-          />
-        </motion.div>
       </motion.div>
+
+      
     </div>
   );
 };
