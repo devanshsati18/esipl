@@ -27,7 +27,6 @@ const solutionContent = {
 
 const GeohazardMitigation = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [currentSolution, setCurrentSolution] = useState("rockfallBarrier");
   const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open
 
   const handleNextImage = () => {
@@ -118,12 +117,9 @@ const GeohazardMitigation = () => {
                 whileHover={{ scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <h4 className="text-2xl font-bold text-orange-500">{solutionContent[key].title}</h4>
-                <img
-                  src={solutionContent[key].image}
-                  alt={solutionContent[key].title}
-                  className="w-12 h-12 rounded-lg"
-                />
+                <h4 className="text-2xl font-bold text-orange-500">
+                  {solutionContent[key].title}
+                </h4>
               </motion.div>
               {/* Dropdown Content */}
               {openDropdown === key && (
@@ -133,15 +129,24 @@ const GeohazardMitigation = () => {
                   animate={{ height: "auto", opacity: 1 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <p className="text-gray-700">{solutionContent[key].content}</p>
+                  <div className="flex items-center gap-6">
+                    {/* Image on the left */}
+                    <img
+                      src={solutionContent[key].image}
+                      alt={solutionContent[key].title}
+                      className="w-1/3 h-auto rounded-lg shadow-md"
+                    />
+                    {/* Content on the right */}
+                    <div className="w-2/3">
+                      <p className="text-gray-700">{solutionContent[key].content}</p>
+                    </div>
+                  </div>
                 </motion.div>
               )}
             </div>
           ))}
         </div>
       </motion.div>
-
-      
     </div>
   );
 };
