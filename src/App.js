@@ -20,6 +20,15 @@ import FrictionSlabcumCrashBarrier from './Pages/WhatWeDo/FrictionSlabcumCrashBa
 import Projects from './Pages/Projects/Projects.jsx'
 import RetainingStructures from './Pages/WhatWeDo/RetainingStructures.jsx';
 
+//Resource Center
+
+import TechnicalDrawings from './Pages/ResourceCenter/TechnicalDrawings/TechnicalDrawings.jsx';
+import AvoidBadPractice from './Pages/ResourceCenter/ThingsToAvoidBadPractice/AvoidBadPractice.jsx';
+import IsoCertificate from './Pages/ResourceCenter/ISOCertificate/IsoCertificate.jsx';
+import TechnicalPaper from './Pages/ResourceCenter/TechnicalPaper/TechincalPaper.jsx';
+import CaseStudy from './Pages/ResourceCenter/CaseStudies/CaseStudies.jsx';
+import Brochure from './Pages/ResourceCenter/Brochure/Brochure.jsx';
+import ImportantCircular from './Pages/ResourceCenter/ImportantCirculars/ImportantCircular.jsx';
 
 // Lazy load pages
 const HomePage = lazy(() => import('./Pages/Home/HomePage'));
@@ -59,6 +68,18 @@ function App() {
             {/* Projects pages path */}
             <Route path='/Projects' element={<Projects />} />
             <Route path="*" element={<div>404 Not Found</div>} /> {/* Fallback for undefined routes */}
+
+            {/**Resource Center */}
+            <Route path='/Brochure' element={<rochure />} />
+            <Route path='/CaseStudy' element={<CaseStudy />} />
+            <Route path='/TechnicalDrawing' element={<TechnicalDrawings />} />
+            <Route path='/TechnicalPapers' element={<TechnicalPaper />} />
+            <Route path='/ThingsToAvoidBadPractice' element={<AvoidBadPractice />} />
+            <Route path='/ImportantCircular' element={<ImportantCircular />} />
+            <Route path='/IsoCertificate' element={<IsoCertificate />} />
+
+
+
           </Routes>
         </Suspense>
       </Layout>
