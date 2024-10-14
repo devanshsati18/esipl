@@ -1,0 +1,1242 @@
+[
+    {
+        "WSNo": 124,
+        "ProjectNumber": 232,
+        "BriefDetails": "Soil Nailing Work",
+        "AuthorityClient": "Welspun/NHAI",
+        "Quantity": 0,
+        "TypeofWork": "SDA & Driven Soil Nailing",
+        "Location": "Haryana",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 123,
+        "ProjectNumber": 231,
+        "BriefDetails": "SNRP Pondicherry",
+        "AuthorityClient": "Welspun/NHAI",
+        "Quantity": 15000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 122,
+        "ProjectNumber": 230,
+        "BriefDetails": "Khellani East Portal",
+        "AuthorityClient": "APCO/NHAI",
+        "Quantity": 3000,
+        "TypeofWork": "SMSE Wall",
+        "Location": "Jammu & Kashmir",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 121,
+        "ProjectNumber": 229,
+        "BriefDetails": "RS wall in Cement Plant",
+        "AuthorityClient": "SRC/DALMIA",
+        "Quantity": 12000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Assam",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 120,
+        "ProjectNumber": 228,
+        "BriefDetails": "Soil Nailing Work",
+        "AuthorityClient": "KCC/NHAI",
+        "Quantity": 0,
+        "TypeofWork": "SDA & Driven Soil Nailing",
+        "Location": "Rajasthan",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 119,
+        "ProjectNumber": 226,
+        "BriefDetails": "KABY",
+        "AuthorityClient": "GRIL/NHAI",
+        "Quantity": 70000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 118,
+        "ProjectNumber": 225,
+        "BriefDetails": "RKP Jh-10",
+        "AuthorityClient": "HGIEL/NHAI",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Jharkhand",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 117,
+        "ProjectNumber": 224,
+        "BriefDetails": "RKP Jh-13",
+        "AuthorityClient": "HGIEL/NHAI",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Jharkhand",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 116,
+        "ProjectNumber": 223,
+        "BriefDetails": "Slope Protection Work",
+        "AuthorityClient": "DRN/NHAI",
+        "Quantity": null,
+        "TypeofWork": "Slope Protection by -Fine Grass/Vetiver/Coirmat/Geocell",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 115,
+        "ProjectNumber": 222,
+        "BriefDetails": "BCEP Pkg-1",
+        "AuthorityClient": "MCL./NHAI",
+        "Quantity": 18000,
+        "TypeofWork": "PET Geogrid with Gabion Fascia",
+        "Location": "Andhra Pradesh & Tamil Nadu",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 114,
+        "ProjectNumber": 221,
+        "BriefDetails": "Lift Irrigation",
+        "AuthorityClient": "MRP Associates",
+        "Quantity": 0,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Maharastra",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 113,
+        "ProjectNumber": 220,
+        "BriefDetails": "Soil Nailing Work",
+        "AuthorityClient": "KCC/NHAI",
+        "Quantity": 0,
+        "TypeofWork": "SDA & Driven Soil Nailing",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 112,
+        "ProjectNumber": 219,
+        "BriefDetails": "CGRG & GSY Nailing Work",
+        "AuthorityClient": "Welspun/NHAI",
+        "Quantity": 0,
+        "TypeofWork": "SDA & Driven Soil Nailing",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 111,
+        "ProjectNumber": 218,
+        "BriefDetails": "Kellani West Portal",
+        "AuthorityClient": "APCO./NHAI",
+        "Quantity": 2000,
+        "TypeofWork": "PET Geogrid with Gabion Fascia",
+        "Location": "Jammu & Kashmir",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 110,
+        "ProjectNumber": 217,
+        "BriefDetails": "Karnal Ring Road",
+        "AuthorityClient": "HGIEL/NHAI",
+        "Quantity": 130000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Haryana",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 109,
+        "ProjectNumber": 216,
+        "BriefDetails": "GPPL Pkg-4",
+        "AuthorityClient": "ABCI/NHIDCL",
+        "Quantity": 10000,
+        "TypeofWork": "PET Geogrid with Gabion Fascia",
+        "Location": "Mizoram",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 108,
+        "ProjectNumber": 215,
+        "BriefDetails": "CGRG & GSY Inspection Work",
+        "AuthorityClient": "Welspun/NHAI",
+        "Quantity": null,
+        "TypeofWork": "RS Wall Inspection Work",
+        "Location": "Uttar Pradesh & Uttarakhand",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 107,
+        "ProjectNumber": 213,
+        "BriefDetails": "SGRP NH-29E",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 70000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 106,
+        "ProjectNumber": 212,
+        "BriefDetails": "HBRP Pkg-3",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 105,
+        "ProjectNumber": 211,
+        "BriefDetails": "MBRP-1C",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 65000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 104,
+        "ProjectNumber": 210,
+        "BriefDetails": "UGRP Pkg-2",
+        "AuthorityClient": "RIPL/NHAI",
+        "Quantity": 45000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Madhya Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 103,
+        "ProjectNumber": 209,
+        "BriefDetails": "BIPL NH54",
+        "AuthorityClient": "ABCI/NHIDCL",
+        "Quantity": 16000,
+        "TypeofWork": "PET Geogrid with Gabion Fascia",
+        "Location": "Mizoram",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 102,
+        "ProjectNumber": 206,
+        "BriefDetails": "DAK-15",
+        "AuthorityClient": "VSEPL/NHAI",
+        "Quantity": 340000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Jammu & Kashmir",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 101,
+        "ProjectNumber": 205,
+        "BriefDetails": "KRRP",
+        "AuthorityClient": "SWASTIK/WELSPUN/NHAI",
+        "Quantity": 8000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Telangana",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 100,
+        "ProjectNumber": 204,
+        "BriefDetails": "Aurangabad NH2",
+        "AuthorityClient": "SWASTIK/WELSPUN/NHAI",
+        "Quantity": 52000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Bihar",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 99,
+        "ProjectNumber": 203,
+        "BriefDetails": "Baghpat(GPL)",
+        "AuthorityClient": "CEIGALL/NHAI",
+        "Quantity": 45000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 98,
+        "ProjectNumber": 202,
+        "BriefDetails": "K4 Ideas",
+        "AuthorityClient": "YFC/NHAI",
+        "Quantity": 55000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 97,
+        "ProjectNumber": 201,
+        "BriefDetails": "DAK-07",
+        "AuthorityClient": "CEIGALL/NHAI",
+        "Quantity": 140000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Punjab",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 96,
+        "ProjectNumber": 200,
+        "BriefDetails": "MABH",
+        "AuthorityClient": "GRIL/NHAI",
+        "Quantity": 147000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Punjab",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 95,
+        "ProjectNumber": 199,
+        "BriefDetails": "ADP-02",
+        "AuthorityClient": "AYUSH PROCON/NHAI",
+        "Quantity": 15000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 94,
+        "ProjectNumber": 198,
+        "BriefDetails": "ADP-04",
+        "AuthorityClient": "MKC/NHAI",
+        "Quantity": 40000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 93,
+        "ProjectNumber": 197,
+        "BriefDetails": "DVE-12",
+        "AuthorityClient": "GRIL/NHAI",
+        "Quantity": 235000,
+        "TypeofWork": "Slope Protection by -Fine Grass/Vetiver/Coirmat/Geocell",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 92,
+        "ProjectNumber": 196,
+        "BriefDetails": "DAK-10,11&12",
+        "AuthorityClient": "MKC/NHAI",
+        "Quantity": 250000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Punjab",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 91,
+        "ProjectNumber": 195,
+        "BriefDetails": "DWKH Pkg-1",
+        "AuthorityClient": "GRIL/NHAI",
+        "Quantity": 21000,
+        "TypeofWork": "Slope Protection by -Fine Grass/Vetiver/Coirmat/Geocell",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 90,
+        "ProjectNumber": 194,
+        "BriefDetails": "ADP-02",
+        "AuthorityClient": "HIMALAYAN/NHAI",
+        "Quantity": 75000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 89,
+        "ProjectNumber": 192,
+        "BriefDetails": "Zmorh",
+        "AuthorityClient": "APCO/NHAI",
+        "Quantity": 10000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Jammu & Kashmir",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 88,
+        "ProjectNumber": 191,
+        "BriefDetails": "DVE-29",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 6000,
+        "TypeofWork": "Slope Protection (Chute Drain)",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 87,
+        "ProjectNumber": 190,
+        "BriefDetails": "DVE-29",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 200000,
+        "TypeofWork": "Slope Protection by -Fine Grass/Vetiver/Coirmat/Geocell",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 86,
+        "ProjectNumber": 189,
+        "BriefDetails": "DVE-16",
+        "AuthorityClient": "RIDPL/NHAI",
+        "Quantity": 25000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 85,
+        "ProjectNumber": 187,
+        "BriefDetails": "Abohar NH-07",
+        "AuthorityClient": "CEIGALL/NHAI",
+        "Quantity": 61000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Punjab",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 84,
+        "ProjectNumber": 184,
+        "BriefDetails": "MCPP NH-01",
+        "AuthorityClient": "WELSPUN/NHAI",
+        "Quantity": 24000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Haryana",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 83,
+        "ProjectNumber": 183,
+        "BriefDetails": "NH-2 Section",
+        "AuthorityClient": "WELSPUN/NHAI",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Uttar Pradesh & Bihar",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 82,
+        "ProjectNumber": 182,
+        "BriefDetails": "Faridabad Bypass-2",
+        "AuthorityClient": "DRA/NHAI",
+        "Quantity": 198000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Haryana",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 81,
+        "ProjectNumber": 181,
+        "BriefDetails": "Champadanga SH-2",
+        "AuthorityClient": "KCC/WBHDCL",
+        "Quantity": 30000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "West Bengal",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 80,
+        "ProjectNumber": 180,
+        "BriefDetails": "SNRP/PKG-2",
+        "AuthorityClient": "RSDCPL/NHAI",
+        "Quantity": 64000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 79,
+        "ProjectNumber": 179,
+        "BriefDetails": "Asind-Mandal-2",
+        "AuthorityClient": "RIDPL/MoRTH",
+        "Quantity": 22000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 78,
+        "ProjectNumber": 178,
+        "BriefDetails": "Asind-Mandal-3",
+        "AuthorityClient": "RIDPL/MoRTH",
+        "Quantity": 30000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 77,
+        "ProjectNumber": 177,
+        "BriefDetails": "DVE-10",
+        "AuthorityClient": "DMIA/NHAI",
+        "Quantity": 23000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 76,
+        "ProjectNumber": 176,
+        "BriefDetails": "SNRP/PKG-1",
+        "AuthorityClient": "SPL/NHAI",
+        "Quantity": 70000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 75,
+        "ProjectNumber": 175,
+        "BriefDetails": "KIM/PKG-2",
+        "AuthorityClient": "PIL/IRCON/NHAI",
+        "Quantity": 160000,
+        "TypeofWork": "Slope Protection by -Fine Grass/Vetiver/Coirmat/Geocell",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 74,
+        "ProjectNumber": 174,
+        "BriefDetails": "DVE/PKG-18",
+        "AuthorityClient": "GRIL/NHAI",
+        "Quantity": 100000,
+        "TypeofWork": "Slope Protection by -Fine Grass/Vetiver/Coirmat/Geocell",
+        "Location": "Madhya Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 73,
+        "ProjectNumber": 170,
+        "BriefDetails": "CHP",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 20000,
+        "TypeofWork": "Friction Slab cum Crash Barrier",
+        "Location": "Karnataka",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 72,
+        "ProjectNumber": 169,
+        "BriefDetails": "DVE/PKG-1",
+        "AuthorityClient": "APCO/NHAI",
+        "Quantity": 6000,
+        "TypeofWork": "Friction Slab cum Crash Barrier",
+        "Location": "Haryana",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 71,
+        "ProjectNumber": 168,
+        "BriefDetails": "KIM/PKG-3",
+        "AuthorityClient": "PIL/NHAI",
+        "Quantity": 18000,
+        "TypeofWork": "Slope Protection (Chute Drain)",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 70,
+        "ProjectNumber": 167,
+        "BriefDetails": "Devihalli-Hassan Sec. NH-75",
+        "AuthorityClient": "SRC/NHAI",
+        "Quantity": 52000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Karnataka",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 69,
+        "ProjectNumber": 166,
+        "BriefDetails": "DRN NH83",
+        "AuthorityClient": "DRN/NHAI",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 68,
+        "ProjectNumber": 165,
+        "BriefDetails": "Aizawl-Tuipang",
+        "AuthorityClient": "ABCI/NHIDCL",
+        "Quantity": 20000,
+        "TypeofWork": "PET Geogrid with Gabion Fascia",
+        "Location": "Mizoram",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 67,
+        "ProjectNumber": 164,
+        "BriefDetails": "LRR",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": null,
+        "TypeofWork": "Friction Slab cum Crash Barrier",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 66,
+        "ProjectNumber": 163,
+        "BriefDetails": "AKP-5",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 150000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 65,
+        "ProjectNumber": 162,
+        "BriefDetails": "DVE-9",
+        "AuthorityClient": "HGIEL/NHAI",
+        "Quantity": 36000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 64,
+        "ProjectNumber": 161,
+        "BriefDetails": "DVE-8",
+        "AuthorityClient": "HGIEL/NHAI",
+        "Quantity": 19000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 63,
+        "ProjectNumber": 160,
+        "BriefDetails": "Rewari Bypass",
+        "AuthorityClient": "HGIEL/NHAI",
+        "Quantity": 115000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Haryana",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 62,
+        "ProjectNumber": 159,
+        "BriefDetails": "Barasat",
+        "AuthorityClient": "KCC/NHAI",
+        "Quantity": 120000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": null,
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 61,
+        "ProjectNumber": 157,
+        "BriefDetails": "KIM-III",
+        "AuthorityClient": "PIL/NHAI",
+        "Quantity": 417000,
+        "TypeofWork": "Slope Protection by -Fine Grass/Vetiver/Coirmat/Geocell",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 60,
+        "ProjectNumber": 156,
+        "BriefDetails": "ACP Pkg-3",
+        "AuthorityClient": "MCL/NHAI",
+        "Quantity": 58000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Maharastra",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 59,
+        "ProjectNumber": 155,
+        "BriefDetails": "CHP",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 170000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Karnataka",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 58,
+        "ProjectNumber": 154,
+        "BriefDetails": "KRRP",
+        "AuthorityClient": "Swastik/NHAI",
+        "Quantity": 55000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Telangana",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 57,
+        "ProjectNumber": 152,
+        "BriefDetails": "Bikaner ROB",
+        "AuthorityClient": "MBL/RPWD",
+        "Quantity": 19000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 56,
+        "ProjectNumber": 151,
+        "BriefDetails": "BEP-II",
+        "AuthorityClient": "APCO/UPEIDA",
+        "Quantity": 83000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 55,
+        "ProjectNumber": 150,
+        "BriefDetails": "BEP-I",
+        "AuthorityClient": "APCO/UPEIDA",
+        "Quantity": 65000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 54,
+        "ProjectNumber": 149,
+        "BriefDetails": "VRR A2",
+        "AuthorityClient": "MCC/NHAI",
+        "Quantity": 17000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 53,
+        "ProjectNumber": 148,
+        "BriefDetails": "VRR",
+        "AuthorityClient": "MCC/NHAI",
+        "Quantity": 150000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 52,
+        "ProjectNumber": 147,
+        "BriefDetails": "DVE-VI",
+        "AuthorityClient": "KCC/NHAI",
+        "Quantity": 22000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 51,
+        "ProjectNumber": 146,
+        "BriefDetails": "DVE-V",
+        "AuthorityClient": "KCC/NHAI",
+        "Quantity": 42000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 50,
+        "ProjectNumber": 145,
+        "BriefDetails": "LRR",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 100000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 49,
+        "ProjectNumber": 144,
+        "BriefDetails": "Chennai-Tada Project",
+        "AuthorityClient": "SPL/NHAI",
+        "Quantity": 25000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 48,
+        "ProjectNumber": 143,
+        "BriefDetails": "Chennai-Tada Project",
+        "AuthorityClient": "SPL/NHAI",
+        "Quantity": 51000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 47,
+        "ProjectNumber": 142,
+        "BriefDetails": "Karaipettai-Walajapet",
+        "AuthorityClient": "SPK/NHAI",
+        "Quantity": 67000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Ongoing"
+    },
+    {
+        "WSNo": 46,
+        "ProjectNumber": 141,
+        "BriefDetails": "NME",
+        "AuthorityClient": "PNC/MSRDC",
+        "Quantity": 38000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Maharastra",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 45,
+        "ProjectNumber": 139,
+        "BriefDetails": "Singhara-Binjhabahal",
+        "AuthorityClient": "MCL/NHAI",
+        "Quantity": 22000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Orissa",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 44,
+        "ProjectNumber": 138,
+        "BriefDetails": "Kallagam-Meensurutti",
+        "AuthorityClient": "OSE/NHAI",
+        "Quantity": 100000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 43,
+        "ProjectNumber": 137,
+        "BriefDetails": "PEP-VIII",
+        "AuthorityClient": "OSE/UPEIDA",
+        "Quantity": 100000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 42,
+        "ProjectNumber": 136,
+        "BriefDetails": "PEP-V",
+        "AuthorityClient": "PNC/UPEIDA",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 41,
+        "ProjectNumber": 134,
+        "BriefDetails": "Chakeri-Allahabad",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 128000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 40,
+        "ProjectNumber": 133,
+        "BriefDetails": "Aligarh-Kanpur",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 70000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 39,
+        "ProjectNumber": 131,
+        "BriefDetails": "Icchapuram",
+        "AuthorityClient": "SPL/NHAI",
+        "Quantity": 67000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Andhra Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 38,
+        "ProjectNumber": 130,
+        "BriefDetails": "Ranastlam",
+        "AuthorityClient": "APCO/NHAI",
+        "Quantity": 80000,
+        "TypeofWork": "PET Geostrap with Large Panel Fascia",
+        "Location": "Andhra Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 37,
+        "ProjectNumber": 129,
+        "BriefDetails": "SCP",
+        "AuthorityClient": "PIL/NHAI",
+        "Quantity": 91000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Tamil Nadu",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 36,
+        "ProjectNumber": 128,
+        "BriefDetails": "Darah-Jhalawar",
+        "AuthorityClient": "PIL/NHAI",
+        "Quantity": 91000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 35,
+        "ProjectNumber": 127,
+        "BriefDetails": "Jhansi-Khajuraho",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 180000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Madhya Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 34,
+        "ProjectNumber": 126,
+        "BriefDetails": "Amrawati-Chikli",
+        "AuthorityClient": "OSE/NHAI",
+        "Quantity": 125000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Maharastra",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 33,
+        "ProjectNumber": 124,
+        "BriefDetails": "Ranastlam-Anandpuram",
+        "AuthorityClient": "ABL/NHAI",
+        "Quantity": 85000,
+        "TypeofWork": "PET Geogrid with RS Block Fascia",
+        "Location": "Andhra Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 32,
+        "ProjectNumber": 122,
+        "BriefDetails": "Delhi-Meerut",
+        "AuthorityClient": "APCO/NHAI",
+        "Quantity": 55000,
+        "TypeofWork": "Ribbed Steel Strip with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 31,
+        "ProjectNumber": 121,
+        "BriefDetails": "Kharar-Ludhiana NH5",
+        "AuthorityClient": "ABL/NHAI",
+        "Quantity": 20000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Punjab",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 30,
+        "ProjectNumber": 120,
+        "BriefDetails": "Lalsot-Dausa",
+        "AuthorityClient": "PNC/NHAI",
+        "Quantity": 75000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 29,
+        "ProjectNumber": 115,
+        "BriefDetails": "Agra Inner Road Phase-II",
+        "AuthorityClient": "RP Infra/ADA",
+        "Quantity": 32000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 28,
+        "ProjectNumber": 113,
+        "BriefDetails": "Nakodar NH71",
+        "AuthorityClient": "PIL",
+        "Quantity": null,
+        "TypeofWork": null,
+        "Location": "Punjab",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 27,
+        "ProjectNumber": 110,
+        "BriefDetails": "NH3 Guna-Shivpuri",
+        "AuthorityClient": "RIPPL/IRCON",
+        "Quantity": 28000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Madhya Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 26,
+        "ProjectNumber": 105,
+        "BriefDetails": "NH123 at Dholpur ",
+        "AuthorityClient": "HGIEL",
+        "Quantity": 30000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 25,
+        "ProjectNumber": 102,
+        "BriefDetails": "Muzaffarnagar- Saharanpur",
+        "AuthorityClient": "APCO",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 24,
+        "ProjectNumber": 100,
+        "BriefDetails": "ALEP Pkg-2",
+        "AuthorityClient": "AFCONS/UPEIDA",
+        "Quantity": 22000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 23,
+        "ProjectNumber": 98,
+        "BriefDetails": "Nagpur Betul NH69",
+        "AuthorityClient": "OSE",
+        "Quantity": 20000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Maharashtra",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 22,
+        "ProjectNumber": 96,
+        "BriefDetails": "Nagpur Bypass",
+        "AuthorityClient": "OSE",
+        "Quantity": 40000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Maharashtra",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 21,
+        "ProjectNumber": 93,
+        "BriefDetails": "Inner Ring Road Agra",
+        "AuthorityClient": "HGIEL/ADA",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 20,
+        "ProjectNumber": 92,
+        "BriefDetails": "Durgapur NH-2",
+        "AuthorityClient": "OSE",
+        "Quantity": 40000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "West Bengal",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 19,
+        "ProjectNumber": 88,
+        "BriefDetails": "NH-8",
+        "AuthorityClient": "GHV+ITNL",
+        "Quantity": 20000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 18,
+        "ProjectNumber": 87,
+        "BriefDetails": "Delhi-Agra Road",
+        "AuthorityClient": "RIPL+L&T",
+        "Quantity": 80000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 17,
+        "ProjectNumber": 86,
+        "BriefDetails": "Gaundhali Bridge",
+        "AuthorityClient": "SPS",
+        "Quantity": 8000,
+        "TypeofWork": "PET Geogrid with Gabion Fascia",
+        "Location": "Goa",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 16,
+        "ProjectNumber": 83,
+        "BriefDetails": "Etawah & Chakeri ",
+        "AuthorityClient": "OSE",
+        "Quantity": 55500,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 15,
+        "ProjectNumber": 77,
+        "BriefDetails": "Panchkula-Yamunanagar",
+        "AuthorityClient": "VIL",
+        "Quantity": 40000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Haryana",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 14,
+        "ProjectNumber": 75,
+        "BriefDetails": "NH2",
+        "AuthorityClient": "ICI+C&C",
+        "Quantity": 60000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Bihar",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 13,
+        "ProjectNumber": 74,
+        "BriefDetails": "Bagodara-Vasad Gujrat",
+        "AuthorityClient": "GVK",
+        "Quantity": 60000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Gujrat",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 12,
+        "ProjectNumber": 72,
+        "BriefDetails": "Jhajjar Bypass",
+        "AuthorityClient": "VIL",
+        "Quantity": 25000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 11,
+        "ProjectNumber": 71,
+        "BriefDetails": "NH30 Bakhtiyarpur",
+        "AuthorityClient": "C&C+ BSC",
+        "Quantity": 40000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Bihar",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 10,
+        "ProjectNumber": 63,
+        "BriefDetails": "Indore Bypass",
+        "AuthorityClient": "GPL",
+        "Quantity": 55000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Madhya Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 9,
+        "ProjectNumber": 62,
+        "BriefDetails": "Nagpur Bypass",
+        "AuthorityClient": "OSE",
+        "Quantity": 50000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Maharastra",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 8,
+        "ProjectNumber": 61,
+        "BriefDetails": "Kishangarh-Beawar",
+        "AuthorityClient": "ISOLUX/NHAI",
+        "Quantity": 100000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 7,
+        "ProjectNumber": 53,
+        "BriefDetails": "Zirakpur-Kalka",
+        "AuthorityClient": "C&C/HEL",
+        "Quantity": 23000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Haryana",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 6,
+        "ProjectNumber": 33,
+        "BriefDetails": "EW Kota Bypass",
+        "AuthorityClient": "ITD/NHAI",
+        "Quantity": 30000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 5,
+        "ProjectNumber": 31,
+        "BriefDetails": "EW Orai- Bhognipur",
+        "AuthorityClient": "KMCCL/NHAI",
+        "Quantity": 31000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 4,
+        "ProjectNumber": 27,
+        "BriefDetails": "NH-1A ROB",
+        "AuthorityClient": "GDCL/NHAI",
+        "Quantity": 20500,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Punjab",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 3,
+        "ProjectNumber": 24,
+        "BriefDetails": "EW UP1 & UP3",
+        "AuthorityClient": "OSE/NHAI",
+        "Quantity": 85000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 2,
+        "ProjectNumber": 21,
+        "BriefDetails": "EW Corrdor RJ-10",
+        "AuthorityClient": "KMCCL/NHAI",
+        "Quantity": 44500,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Rajasthan",
+        "StatusofWork": "Completed"
+    },
+    {
+        "WSNo": 1,
+        "ProjectNumber": 9,
+        "BriefDetails": "ROB6/1 Kanpur",
+        "AuthorityClient": "Somdatt Buiders/NHAI",
+        "Quantity": 16000,
+        "TypeofWork": "PET Geogrid with Large Panel Fascia",
+        "Location": "Uttar Pradesh",
+        "StatusofWork": "Completed"
+    }
+]

@@ -1,38 +1,40 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const imageSliderData = [
-  "https://via.placeholder.com/400x400",
-  "https://via.placeholder.com/400x400/ff6347",
-  "https://via.placeholder.com/400x400/4682b4",
-];
+// Import images from assets folder
+import image1 from '../../Assets/What we do Photos/Friction Slab cum Crash Barrier/image1.jpg';
+import image2 from '../../Assets/What we do Photos/Friction Slab cum Crash Barrier/image2.jpg';
+import image3 from '../../Assets/What we do Photos/Friction Slab cum Crash Barrier/image3.jpg';
+import image4 from '../../Assets/What we do Photos/Friction Slab cum Crash Barrier/image4.jpg';
+
+const imageSliderData = [image1, image2, image3];
 
 const solutionContent = {
-    EnhancedSafety: {
+  EnhancedSafety: {
     title: "Enhanced Safety",
     content: "The combination of the friction slab and crash barrier improves vehicle control during impacts, reducing the risk of serious accidents.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image1, // Direct reference to the image
   },
   StructuralStability: {
     title: "Structural Stability",
     content: "The friction slab provides a stable foundation that can support heavy loads while enhancing friction between the vehicle tires and the surface.",
-    image: "https://via.placeholder.com/400x250/4682b4",
+    image: image2, // Direct reference to the image
   },
   CostEffective: {
     title: "Cost-Effective",
     content: "Integrating two functions into a single structure can save on materials, labour, and installation costs compared to separate systems.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image3, // Direct reference to the image
   },
   Durability: {
     title: "Durability",
     content: "Typically constructed from reinforced concrete, these systems are designed to withstand environmental stresses and vehicle impacts.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image4, // Direct reference to the image
   },
 };
 
 const FrictionSlabcumCrashBarrier = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -54,9 +56,8 @@ const FrictionSlabcumCrashBarrier = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
-        Friction Slab cum Crash Barrier
+          Friction Slab cum Crash Barrier
         </h1>
-        {/* <p className="text-2xl mt-4 text-gray-600">Mitigating risks, securing the future.</p> */}
       </motion.div>
 
       {/* Main Content Section */}
@@ -93,10 +94,10 @@ const FrictionSlabcumCrashBarrier = () => {
             Understanding Friction Slab cum Crash Barrier
           </h2>
           <p className="text-gray-700 leading-relaxed">
-          A friction slab cum crash barrier is a specialized structural component used in highway and road safety systems. This design combines a friction slab and a crash barrier into a single unit, providing both stability for vehicles and protection against potential hazards.
+            A friction slab cum crash barrier is a specialized structural component used in highway and road safety systems. This design combines a friction slab and a crash barrier into a single unit, providing both stability for vehicles and protection against potential hazards.
           </p>
           <p className="text-gray-700 mt-4">
-          Friction slabs cum crash barriers play a crucial role in enhancing road safety by combining structural stability with protective features. They are designed to manage vehicle impacts effectively, promoting safer driving environments on various road types.
+            Friction slabs cum crash barriers play a crucial role in enhancing road safety by combining structural stability with protective features. They are designed to manage vehicle impacts effectively, promoting safer driving environments on various road types.
           </p>
         </motion.div>
       </div>
@@ -104,7 +105,7 @@ const FrictionSlabcumCrashBarrier = () => {
       {/* Types of Solutions Section with Dropdowns */}
       <motion.div
         className="mt-24"
-        initial={{ opacity: 0, y: 50 }} // Slide-up and fade-in effect
+        initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >

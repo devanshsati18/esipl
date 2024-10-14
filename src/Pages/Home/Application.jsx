@@ -9,6 +9,7 @@ import NailingImage from './OIP.jpeg';
 import RockfallImage from './OIP.jpeg';
 import ErosionImage from './OIP.jpeg';
 import LinerImage from './OIP.jpeg';
+import image1 from '../../Assets/What we do Photos/Friction Slab cum Crash Barrier/image1.jpg';
 
 // Dummy content for tabs
 const tabContent = {
@@ -41,7 +42,7 @@ const tabContent = {
     content: "Repair and rehabilitation are essential aspects of maintaining and extending the life of infrastructure and structures. They involve addressing issues caused by wear and tear, damage, or deterioration to restore functionality, safety, and aesthetics.",
   },
   'Friction Slab Crash Barrier Construction': {
-    imgSrc: ImprovementImage,  // Replace with appropriate image if different
+    imgSrc: image1,  // Replace with appropriate image if different
     content: "A friction slab crash barrier is a type of safety barrier designed to protect vehicles from colliding with roadside obstacles, such as bridges or retaining walls, and to prevent them from veering off the road. These barriers are particularly useful in areas where conventional barriers might not be suitable due to space constraints or aesthetic considerations",
   },
 };
