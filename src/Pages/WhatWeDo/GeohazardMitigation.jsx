@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const imageSliderData = [
-  "https://via.placeholder.com/400x400",
-  "https://via.placeholder.com/400x400/ff6347",
-  "https://via.placeholder.com/400x400/4682b4",
-];
+import image1 from '../../Assets/What we do Photos/Geohazard mitigation/Heading/image1.jpg'
+const imageSliderData = [image1];
 
 const solutionContent = {
   rockfallBarrier: {
@@ -104,7 +101,7 @@ const GeohazardMitigation = () => {
         transition={{ duration: 1 }}
       >
         <h3 className="text-center text-4xl font-bold text-gray-700 mb-10">
-          Types of Solutions to Prevent Geohazard Mitigation
+          Types of Solutions for Geohazard Mitigation
         </h3>
 
         {/* Dropdowns for Solutions */}

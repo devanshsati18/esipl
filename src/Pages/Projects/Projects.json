@@ -4,7 +4,7 @@
         "ProjectNumber": 232,
         "BriefDetails": "Soil Nailing Work",
         "AuthorityClient": "Welspun/NHAI",
-        "Quantity": 0,
+        "Quantity": "-",
         "TypeofWork": "SDA & Driven Soil Nailing",
         "Location": "Haryana",
         "StatusofWork": "Ongoing"

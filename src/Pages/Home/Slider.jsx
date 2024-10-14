@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import bg1 from '../../Assets/Slider/bg1.jpg'
-import bg2 from '../../Assets/Slider/bg2.jpg'
+import bg2 from '../../Assets/Slider/bg2.webp'
 import bg3 from '../../Assets/Slider/bg3.jpg'
 
 export function CustomSlider() {

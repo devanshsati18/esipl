@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const imageSliderData = [
-  "https://via.placeholder.com/400x400",
-  "https://via.placeholder.com/400x400/ff6347",
-  "https://via.placeholder.com/400x400/4682b4",
-];
+import image1 from '../../Assets/What we do Photos/Reinforced Soil Slope/image1.png';
+import image2 from '../../Assets/What we do Photos/Reinforced Soil Slope/image2.png'
+
+const imageSliderData = [image1,image2];
 
 const solutionContent = {
   IncreasedStability: {
@@ -130,12 +129,7 @@ const ReinforcedSoilSlope = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="flex items-center gap-6">
-                    {/* Image on the left */}
-                    <img
-                      src={solutionContent[key].image}
-                      alt={solutionContent[key].title}
-                      className="w-1/3 h-auto rounded-lg shadow-md"
-                    />
+                    
                     {/* Content on the right */}
                     <div className="w-2/3">
                       <p className="text-gray-700">{solutionContent[key].content}</p>

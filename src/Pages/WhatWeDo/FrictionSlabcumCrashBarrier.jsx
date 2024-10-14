@@ -110,7 +110,7 @@ const FrictionSlabcumCrashBarrier = () => {
         transition={{ duration: 1 }}
       >
         <h3 className="text-center text-4xl font-bold text-gray-700 mb-10">
-          Types of Solutions to Prevent Friction Slab cum Crash Barrier
+          Benefits of Friction Slab cum Crash Barrier
         </h3>
 
         {/* Dropdowns for Solutions */}
@@ -136,12 +136,7 @@ const FrictionSlabcumCrashBarrier = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="flex items-center gap-6">
-                    {/* Image on the left */}
-                    <img
-                      src={solutionContent[key].image}
-                      alt={solutionContent[key].title}
-                      className="w-1/3 h-auto rounded-lg shadow-md"
-                    />
+                    
                     {/* Content on the right */}
                     <div className="w-2/3">
                       <p className="text-gray-700">{solutionContent[key].content}</p>

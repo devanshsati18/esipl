@@ -1,32 +1,35 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const imageSliderData = [
-  "https://via.placeholder.com/400x400",
-  "https://via.placeholder.com/400x400/ff6347",
-  "https://via.placeholder.com/400x400/4682b4",
-];
+import image1 from '../../Assets/What we do Photos/Ground Improvement/Basal Reinforcement/image1.png'
+import image2 from '../../Assets/What we do Photos/Ground Improvement/Dynamic Compaction/DC.jpg'
+import image3 from '../../Assets/What we do Photos/Ground Improvement/Stone or Sand Column/image3.png'
+import image4 from '../../Assets/What we do Photos/Ground Improvement/Prefabricated Vertical Drain (PVD)/Screenshot 2024-10-14 163953.png'
+import image5 from '../../Assets/What we do Photos/Ground Improvement/Prefabricated Vertical Drain (PVD)/image5.jpg'
+import image6 from '../../Assets/What we do Photos/Ground Improvement/Prefabricated Vertical Drain (PVD)/image6.jpg' 
+
+const imageSliderData = [image5,image6];
 
 const solutionContent = {
     BasalReinforcement: {
     title: "Basal Reinforcement",
     content: "Basal reinforcement is a ground improvement technique that enhances the stability and load-bearing capacity of weak soils, particularly under structures like embankments or retaining walls. This method involves installing a grid or layer of reinforcement (often made of Geogrids, Geocells or geotextiles) at the base of the structure.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image1,
   },
   StoneSandColumn:  {
     title: "Stone/Sand Column",
     content: "Stone Column or Sand Column ground improvement techniques are effective methods used to enhance the load-bearing capacity and stability of soft or weak soils. Stone columns involve the installation of vertical columns filled with gravel or crushed stone into the ground to improve soil strength and reduce settlement. Sand columns are like stone columns but use sand as the filling material. They are particularly effective in granular soils.",
-    image: "https://via.placeholder.com/400x250/4682b4",
+    image: image3,
   },
   PrefabricatedVerticalDrain:  {
     title: "Prefabricated Vertical Drain (PVD’s)",
     content: "Prefabricated Vertical Drains (PVDs) are an effective ground improvement technique used to accelerate the consolidation of soft, compressible soils. They facilitate the rapid dissipation of excess pore water pressure, promoting quicker soil stabilization. PVDs are slender, prefabricated drainage elements made from a core material (typically a plastic or geosynthetic) that allows water to flow through while providing mechanical support. They are installed vertically into the ground at specified intervals.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image4,
   },
   DynamicCompaction:{
     title: "Dynamic Compaction",
     content: "Dynamic compaction is a ground improvement technique used to enhance the density and strength of soil, particularly in loose or weak soils. It involves dropping a heavy weight from a specified height onto the ground surface, which causes the soil to compact and rearrange.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image2,
   },
 };
 
@@ -45,7 +48,7 @@ const GroundImprovements = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen bg-gray-100 p-8 py-20">
       {/* Hero Section */}
       <motion.div
         className="text-center mb-16"
@@ -109,7 +112,7 @@ const GroundImprovements = () => {
         transition={{ duration: 1 }}
       >
         <h3 className="text-center text-4xl font-bold text-gray-700 mb-10">
-          Types of Solutions to Prevent Ground Improvements
+          Types of Ground Improvements
         </h3>
 
         {/* Dropdowns for Solutions */}

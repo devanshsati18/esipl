@@ -24,7 +24,7 @@ function Navbar() {
     clearTimeout(timeoutId); // Clear any existing timeout
     const id = setTimeout(() => {
       setOpenDropdown(null);
-    }, 1000); // 1 second delay for closing
+    }, 500); // 1 second delay for closing
     setTimeoutId(id);
   };
 
@@ -46,7 +46,7 @@ function Navbar() {
             What We Do
           </button>
           {openDropdown === 'whatWeDo' && (
-            <div className="absolute left-0 bg-white mt-2 rounded shadow-lg z-20 w-48">
+            <div className="absolute left-0 bg-white bg-opacity-50 mt-2 rounded shadow-lg z-20 w-48">
               <Link to="/RetainingStructures" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Retaining Structures</Link>
               <Link to="/GeohazardMitigation" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Geohazard Mitigation</Link>
               <Link to="/GeosyntheticPavementApplications" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Geosynthetic Pavement Applications</Link>
@@ -62,19 +62,17 @@ function Navbar() {
         <Link to="/Projects" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">Projects</Link>
         <div className="relative" onMouseEnter={() => handleMouseEnter('knowledgeCenter')} onMouseLeave={handleMouseLeave}>
           <button className="hover:bg-custom-orange p-2 rounded transition-colors duration-300">
-            Knowledge Center
+            Resource Center
           </button>
           {openDropdown === 'knowledgeCenter' && (
-            <div className="absolute left-0 bg-white mt-2 rounded shadow-lg z-20 w-48">
+            <div className="absolute left-0 bg-white bg-opacity-50 mt-2 rounded shadow-lg z-20 w-48">
               <Link to="/app1" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Brochure</Link>
               <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Case Studies</Link>
               <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Drawings</Link>
               <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Papers</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Installation Guides</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Presentation</Link>
               <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Things To Avoid Bad Practices</Link>
               <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Important Circulars</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">ISO Certificates(ESIPL & Globe)</Link>
+              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">ISO Certificates(ESIPL & GIS)</Link>
             </div>
           )}
         </div>

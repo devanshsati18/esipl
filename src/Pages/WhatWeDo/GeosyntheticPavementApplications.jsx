@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const imageSliderData = [
-  "https://via.placeholder.com/400x400",
-  "https://via.placeholder.com/400x400/ff6347",
-  "https://via.placeholder.com/400x400/4682b4",
-];
+import image1 from '../../Assets/What we do Photos/Geosynthetic Pavement Applications/Fig3-Alternate-Figure-3.jpg';
+import image2 from '../../Assets/What we do Photos/Geosynthetic Pavement Applications/geosynthetics-in-civil-engineering.webp'
+
+const imageSliderData = [image1,image2];
 
 const solutionContent = {
     RoadsandHighways: {
@@ -124,7 +123,7 @@ const GeosyntheticPavementApplications = () => {
         transition={{ duration: 1 }}
       >
         <h3 className="text-center text-4xl font-bold text-gray-700 mb-10">
-          Types of Solutions to Prevent Geohazard Mitigation
+          Applications Where Geosynthetic Pavements Are Used
         </h3>
 
         {/* Dropdowns for Solutions */}
@@ -151,11 +150,7 @@ const GeosyntheticPavementApplications = () => {
                 >
                   <div className="flex items-center gap-6">
                     {/* Image on the left */}
-                    <img
-                      src={solutionContent[key].image}
-                      alt={solutionContent[key].title}
-                      className="w-1/3 h-auto rounded-lg shadow-md"
-                    />
+                    
                     {/* Content on the right */}
                     <div className="w-2/3">
                       <p className="text-gray-700">{solutionContent[key].content}</p>

@@ -56,7 +56,7 @@ const Projects = () => {
           </div>
 
           {/* Project List */}
-          <div className="overflow-auto mt-5 shadow-md rounded-lg bg-white">
+          <div className="overflow-auto mt-5 shadow-md rounded-lg bg-white py-2">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
@@ -91,10 +91,7 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-4 bg-white shadow-inner mt-8">
-        <p className="text-center text-gray-600">&copy; 2024 Earthcon Systems. All rights reserved.</p>
-      </footer>
+      
     </div>
   );
 };
