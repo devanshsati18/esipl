@@ -30,6 +30,9 @@ import CaseStudy from './Pages/ResourceCenter/CaseStudies/CaseStudies.jsx';
 import Brochure from './Pages/ResourceCenter/Brochure/Brochure.jsx';
 import ImportantCircular from './Pages/ResourceCenter/ImportantCirculars/ImportantCircular.jsx';
 
+//career
+import Career from './Pages/Career/Career.jsx';
+
 // Lazy load pages
 const HomePage = lazy(() => import('./Pages/Home/HomePage'));
 /* const Gallery = lazy(() => import('./Pages/Gallery/Gallery')); */
@@ -77,6 +80,8 @@ function App() {
             <Route path='/ThingsToAvoidBadPractice' element={<AvoidBadPractice />} />
             <Route path='/ImportantCircular' element={<ImportantCircular />} />
             <Route path='/IsoCertificate' element={<IsoCertificate />} />
+            {/*Career*/}
+            <Route path='/Career' element ={<Career /> }/>
 
 
 

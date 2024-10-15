@@ -3,6 +3,7 @@ import AboutUs from "./AboutUs";
 import CustomSlider from "./Slider";
 import Application from "./Application";
 import News from "./News";
+import TalkToUs from "./talkToUs";
 import Clients from "./Clients";
 import logoGIF from '../../Assets/logo/logoaniamtion.gif'; // Adjust the path to your GIF
 import { motion } from 'framer-motion';
@@ -54,6 +55,9 @@ const HomePage = () => {
             {/* Application Section */}
             <div>
                 <Application />
+            </div>
+            <div>
+                <TalkToUs />
             </div>
             
             {/* Clients Section */}

@@ -72,7 +72,7 @@ const GreetingOverlay = () => {
     const [showGreeting, setShowGreeting] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setShowGreeting(false), 4000);
+        const timer = setTimeout(() => setShowGreeting(false), 1000);
         return () => clearTimeout(timer);
     }, []);
 
