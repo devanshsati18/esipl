@@ -25,12 +25,8 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-100 to-blue-300 relative">
-      {/* Welcome Message */}
-      {showWelcome && (
-        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow-lg animate__animated animate__fadeInDown">
-          Welcome to Earthcon Systems!
-        </div>
-      )}
+    
+      
 
       {/* Loader */}
       {loading && (

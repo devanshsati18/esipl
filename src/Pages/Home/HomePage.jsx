@@ -4,6 +4,7 @@ import CustomSlider from "./Slider";
 import Application from "./Application";
 import News from "./News";
 import Clients from "./Clients";
+import logoGIF from '../../Assets/logo/logoaniamtion.gif'; // Adjust the path to your GIF
 import { motion } from 'framer-motion';
 import './styles.css'; // Ensure to import your CSS file
 
@@ -21,11 +22,9 @@ const HomePage = () => {
     if (loading) {
         return (
             <div className="flex justify-center items-center h-screen">
-                <motion.video 
-                    src="../../Assets/logo/video.mp4" // Use the path or URL to your video
-                    autoPlay 
-                    loop 
-                    muted 
+                <motion.img 
+                    src={logoGIF} 
+                    alt="Logo" 
                     className="mb-4 w-1/4 sm:w-1/3 md:w-1/4" 
                     initial={{ x: -100, opacity: 0 }} 
                     animate={{ x: 0, opacity: 1 }} 

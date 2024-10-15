@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import bg1 from '../../Assets/Slider/bg1.jpg'
-import bg2 from '../../Assets/Slider/bg2.webp'
-import bg3 from '../../Assets/Slider/bg3.jpg'
+import bg1 from '../../Assets/Slider/bg1.jpg';
+import bg2 from '../../Assets/Slider/bg2.webp';
+import bg3 from '../../Assets/Slider/bg3.jpg';
 
 export function CustomSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,11 +10,11 @@ export function CustomSlider() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 3500,
+    speed: 7000, // Increased from 3500 to 7000
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000, // Increased from 2000 to 4000
     beforeChange: (current, next) => setCurrentSlide(next),
   };
 
@@ -40,25 +40,22 @@ export function CustomSlider() {
       }
     }
     .animate-slide-in {
-      animation: slide-in 1s ease-out;
+      animation: slide-in 2s ease-out; // Increased to 2s
     }
     .animate-slide-out {
-      animation: slide-out 1s ease-in;
+      animation: slide-out 2s ease-in; // Increased to 2s
     }
   `;
 
   const slidesContent = [
     {
       heading: "Building tomorrow's foundation today",
-      /* content: "Content for image 1 with more details here.", */
     },
     {
       heading: "Creating tomorrow's landmarks with today's expertise",
-      /* content: "Content for image 2 with more details here.", */
     },
     {
       heading: "Crafting the pillars of progress for tomorrow",
-      /* content: "Content for image 3 with more details here.", */
     },
   ];
 
@@ -69,25 +66,13 @@ export function CustomSlider() {
       </style>
       <Slider {...settings} className="w-full h-full">
         <div className="relative w-full h-full">
-          <img
-            src={bg1}
-            alt="image 1"
-            className="w-full h-full object-cover"
-          />
+          <img src={bg1} alt="image 1" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-full">
-          <img
-            src={bg2}
-            alt="image 2"
-            className="w-full h-full object-cover"
-          />
+          <img src={bg2} alt="image 2" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-full">
-          <img
-            src={bg3}
-            alt="image 3"
-            className="w-full h-full object-cover"
-          />
+          <img src={bg3} alt="image 3" className="w-full h-full object-cover" />
         </div>
       </Slider>
       <div
@@ -102,33 +87,37 @@ export function CustomSlider() {
           zIndex: 1,
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center', // Centers content vertically
+          justifyContent: 'center',
           alignItems: 'flex-start',
-          padding: '1rem', // Padding to avoid text touching the edges
-          boxSizing: 'border-box', // Ensures padding is included in width/height
+          padding: '1rem',
+          boxSizing: 'border-box',
+          overflow: 'hidden', // Prevent overflow
         }}
       >
         <div className="text-left">
           <h1
             className={`text-white text-2xl md:text-3xl lg:text-4xl font-bold ${currentSlide === 0 ? 'animate-slide-in' : 'animate-slide-out'}`}
-            style={{ 
-              overflowWrap: 'break-word', 
-              wordBreak: 'break-word', 
-              margin: 0, 
-              lineHeight: '1.2', 
-              maxWidth: '90%' // Constrain width if necessary
-            }} 
+            style={{
+              overflowWrap: 'break-word',
+              wordBreak: 'break-word',
+              margin: 0,
+              lineHeight: '1.2',
+              maxWidth: '90%',
+            }}
           >
             {slidesContent[currentSlide].heading}
           </h1>
           <p
             className={`text-white text-sm md:text-base lg:text-lg ${currentSlide === 0 ? 'animate-slide-in' : 'animate-slide-out'}`}
-            style={{ 
-              overflowWrap: 'break-word', 
-              wordBreak: 'break-word', 
-              margin: '0.5rem 0 0 0', 
-              lineHeight: '1.5' 
-            }} 
+            style={{
+              overflowWrap: 'break-word',
+              wordBreak: 'break-word',
+              margin: '0.5rem 0 0 0',
+              lineHeight: '1.5',
+              maxWidth: '90%', // Ensure text doesn't overflow
+              overflow: 'hidden', // Prevent overflow
+              textOverflow: 'ellipsis', // Add ellipsis if text overflows
+            }}
           >
             {slidesContent[currentSlide].content}
           </p>
