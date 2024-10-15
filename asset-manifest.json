@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/esipl/static/css/main.830cd58f.css",
-    "main.js": "/esipl/static/js/main.42f10023.js",
+    "main.css": "/esipl/static/css/main.e6ce771a.css",
+    "main.js": "/esipl/static/js/main.c8adc7bf.js",
     "static/css/707.6cbaf840.chunk.css": "/esipl/static/css/707.6cbaf840.chunk.css",
-    "static/js/707.74bc1256.chunk.js": "/esipl/static/js/707.74bc1256.chunk.js",
+    "static/js/707.6721a5ff.chunk.js": "/esipl/static/js/707.6721a5ff.chunk.js",
     "static/js/453.ef2d6374.chunk.js": "/esipl/static/js/453.ef2d6374.chunk.js",
     "static/js/608.f2513161.chunk.js": "/esipl/static/js/608.f2513161.chunk.js",
     "static/media/30.jpg": "/esipl/static/media/30.1fcdf398f93597d1b5fe.jpg",
@@ -217,15 +217,15 @@
     "static/media/slick.ttf": "/esipl/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/esipl/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/esipl/index.html",
-    "main.830cd58f.css.map": "/esipl/static/css/main.830cd58f.css.map",
-    "main.42f10023.js.map": "/esipl/static/js/main.42f10023.js.map",
+    "main.e6ce771a.css.map": "/esipl/static/css/main.e6ce771a.css.map",
+    "main.c8adc7bf.js.map": "/esipl/static/js/main.c8adc7bf.js.map",
     "707.6cbaf840.chunk.css.map": "/esipl/static/css/707.6cbaf840.chunk.css.map",
-    "707.74bc1256.chunk.js.map": "/esipl/static/js/707.74bc1256.chunk.js.map",
+    "707.6721a5ff.chunk.js.map": "/esipl/static/js/707.6721a5ff.chunk.js.map",
     "453.ef2d6374.chunk.js.map": "/esipl/static/js/453.ef2d6374.chunk.js.map",
     "608.f2513161.chunk.js.map": "/esipl/static/js/608.f2513161.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.830cd58f.css",
-    "static/js/main.42f10023.js"
+    "static/css/main.e6ce771a.css",
+    "static/js/main.c8adc7bf.js"
   ]
 }
