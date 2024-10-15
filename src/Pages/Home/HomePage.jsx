@@ -25,7 +25,7 @@ const HomePage = () => {
                 <motion.img 
                     src={logoGIF} 
                     alt="Logo" 
-                    className="mb-4 w-1/4 sm:w-1/3 md:w-1/4" 
+                    className="mb-4 w-1/2 sm:w-2/5 md:w-1/3 lg:w-2/5 xl:w-1/3" // Increased width for larger size
                     initial={{ x: -100, opacity: 0 }} 
                     animate={{ x: 0, opacity: 1 }} 
                     transition={{ duration: 0.5 }} 

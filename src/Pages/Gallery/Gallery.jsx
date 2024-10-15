@@ -44,7 +44,7 @@ const Gallery = () => {
 
             {/* Fixed Main Header */}
             <header className="fixed top-0 w-full py-6 bg-white shadow-lg z-10">
-                <h2 className="text-3xl font-bold text-center text-orange-600 animate__animated animate__fadeInDown">
+                <h2 className="text-3xl font-bold text-center text-orange-600 animate__animated animate__fadeInDown pt-10">
                     {activeSection || 'Welcome to Our Gallery'}
                 </h2>
             </header>
