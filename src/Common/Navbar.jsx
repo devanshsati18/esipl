@@ -66,13 +66,13 @@ function Navbar() {
           </button>
           {openDropdown === 'knowledgeCenter' && (
             <div className="absolute left-0 bg-white bg-opacity-50 mt-2 rounded shadow-lg z-20 w-48">
-              <Link to="/app1" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Brochure</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Case Studies</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Drawings</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Papers</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Things To Avoid Bad Practices</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Important Circulars</Link>
-              <Link to="/app2" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">ISO Certificates(ESIPL & GIS)</Link>
+              <Link to="/Brochure" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Brochure</Link>
+              <Link to="/CaseStudy" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Case Studies</Link>
+              <Link to="/TechnicalDrawing" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Drawings</Link>
+              <Link to="/TechnicalPapers" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Technical Papers</Link>
+              <Link to="/ThingsToAvoidBadPractice" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Things To Avoid Bad Practices</Link>
+              <Link to="/ImportantCircular" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">Important Circulars</Link>
+              <Link to="/IsoCertificate" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300">ISO Certificates(ESIPL & GIS)</Link>
             </div>
           )}
         </div>

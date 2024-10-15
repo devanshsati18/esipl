@@ -3,10 +3,9 @@ import 'animate.css'; // Import Animate.css for animations
 import './Gallery.css'; // Import your custom CSS styles
 
 const importAll = (r) => r.keys().map(r);
-
+const sitePictureImages = importAll(require.context('../../Assets/Gallery/Site Pictures', false, /\.(png|jpe?g|svg)$/));
 const annualMeetImages = importAll(require.context('../../Assets/Gallery/Annual Meet', false, /\.(png|jpe?g|svg)$/));
 const festivalCelebrationImages = importAll(require.context('../../Assets/Gallery/Festivals Celebration', false, /\.(png|jpe?g|svg)$/));
-const sitePictureImages = importAll(require.context('../../Assets/Gallery/Site Pictures', false, /\.(png|jpe?g|svg)$/));
 const coCurricularActivityImages = importAll(require.context('../../Assets/Gallery/Co-curricular Activities', false, /\.(png|jpe?g|svg)$/));
 
 const Gallery = () => {
@@ -51,22 +50,20 @@ const Gallery = () => {
             </header>
 
             <main className="pt-32 px-8">
-                {['Annual Meet', 'Festival Celebration', 'Site Pictures', 'Co-curricular Activities'].map((title, index) => (
+                {['Site Pictures', 'Annual Meet', 'Festival Celebration', 'Co-curricular Activities'].map((title, index) => (
                     <Section
                         key={title}
                         title={title}
                         images={
+                            title === "Site Pictures" ? sitePictureImages :
                             title === "Annual Meet" ? annualMeetImages :
                             title === "Festival Celebration" ? festivalCelebrationImages :
-                            title === "Site Pictures" ? sitePictureImages :
                             coCurricularActivityImages
                         }
                         setRef={(el) => (sectionRefs.current[index] = el)}
                     />
                 ))}
             </main>
-
-            
         </div>
     );
 };

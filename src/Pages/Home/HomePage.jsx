@@ -1,10 +1,40 @@
+import React, { useEffect, useState } from "react";
 import AboutUs from "./AboutUs";
 import CustomSlider from "./Slider";
 import Application from "./Application";
 import News from "./News";
 import Clients from "./Clients";
+import { motion } from 'framer-motion';
+import './styles.css'; // Ensure to import your CSS file
 
 const HomePage = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 3000); // Adjust the loading time as needed
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center h-screen">
+                <motion.video 
+                    src="../../Assets/logo/video.mp4" // Use the path or URL to your video
+                    autoPlay 
+                    loop 
+                    muted 
+                    className="mb-4 w-1/4 sm:w-1/3 md:w-1/4" 
+                    initial={{ x: -100, opacity: 0 }} 
+                    animate={{ x: 0, opacity: 1 }} 
+                    transition={{ duration: 0.5 }} 
+                />
+            </div>
+        );
+    }
+
     return (
         <div className="flex flex-col">
             {/* Slider Section */}
@@ -13,22 +43,22 @@ const HomePage = () => {
             </div>
             
             {/* About Us Section */}
-            <div >
+            <div>
                 <AboutUs />
             </div>
             
             {/* News Section */}
-            <div >
+            <div>
                 <News />
             </div>
             
             {/* Application Section */}
-            <div >
+            <div>
                 <Application />
             </div>
             
             {/* Clients Section */}
-            <div >
+            <div>
                 <Clients />
             </div>
         </div>

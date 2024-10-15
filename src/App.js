@@ -70,7 +70,7 @@ function App() {
             <Route path="*" element={<div>404 Not Found</div>} /> {/* Fallback for undefined routes */}
 
             {/**Resource Center */}
-            <Route path='/Brochure' element={<rochure />} />
+            <Route path='/Brochure' element={<Brochure />} />
             <Route path='/CaseStudy' element={<CaseStudy />} />
             <Route path='/TechnicalDrawing' element={<TechnicalDrawings />} />
             <Route path='/TechnicalPapers' element={<TechnicalPaper />} />

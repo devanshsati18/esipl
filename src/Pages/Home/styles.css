@@ -1,0 +1,17 @@
+.typing-animation {
+    display: inline-block;
+    overflow: hidden; /* Ensures the text will be clipped */
+    white-space: nowrap; /* Prevents text from wrapping */
+    border-right: 4px solid orange; /* Creates the cursor effect */
+    animation: typing 3.5s steps(30, end), blink 0.75s step-end infinite;
+    margin-left: 0; /* Reduce margin after typing */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
