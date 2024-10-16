@@ -1,52 +1,56 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
-const imageSliderData = [
-  "https://via.placeholder.com/400x400/ff6347",
-  "https://via.placeholder.com/400x400/4682b4",
-  "https://via.placeholder.com/400x400/ffa500",
-];
+import image1 from '../../Assets/What we do Photos/Retaining Structures/image1.jpg'
+import image2 from '../../Assets/What we do Photos/Retaining Structures/Back to Back wall/image1.png'
+import image3 from '../../Assets/What we do Photos/Retaining Structures/Bridge Tech-Abutments/image2.png'
+import image4 from '../../Assets/What we do Photos/Retaining Structures/Broken Slope/image4.png'
+import image5 from '../../Assets/What we do Photos/Retaining Structures/Mechanically Stabilized Earth Wall/image5.png'
+import image6 from '../../Assets/What we do Photos/Retaining Structures/Nailed Gabion Wall/image6.png'
+import image7 from '../../Assets/What we do Photos/Retaining Structures/Reinforced Gabion Gravity Wall/image7.png'
+import image8 from '../../Assets/What we do Photos/Retaining Structures/Shored Mechanically Stabilized Earth Wall/image8.png'
+import image9 from '../../Assets/What we do Photos/Retaining Structures/Super-imposed Wall/image9.png'
+const imageSliderData = [image1];
 
 const solutionContent = {
   mseWall: {
     title: "Mechanically Stabilized Earth Wall",
     content: "A Mechanically Stabilized Earth (MSE) wall combines soil with reinforcement materials to provide stability and support. MSE walls efficiently handle high loads and are versatile in various soil conditions.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image8,
   },
   backToBackWall: {
     title: "Back-to-Back Wall",
     content: "Back-to-back walls are placed close enough that the reinforced portions overlap, reducing earth pressure on the reinforced blocks.",
-    image: "https://via.placeholder.com/400x250/4682b4",
+    image: image2,
   },
   brokenSlopeWall: {
     title: "Broken Slope Wall",
     content: "This design addresses changes in slope near the retaining wall, ensuring stability and support.",
-    image: "https://via.placeholder.com/400x250/ffa500",
+    image: image4,
   },
   superimposedWall: {
     title: "Superimposed Wall",
     content: "A superimposed RE wall is built on top of another to increase height and stability.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image9,
   },
   smseWall: {
     title: "Shored Mechanically Stabilized Earth Wall",
     content: "This type of retaining wall is ideal for limited spaces or when a sleek appearance is required.",
-    image: "https://via.placeholder.com/400x250/4682b4",
+    image: image5,
   },
   bridgeTech: {
     title: "Bridge Tech-Abutments",
     content: "RS abutments provide a strong and economical solution for supporting bridge superstructures.",
-    image: "https://via.placeholder.com/400x250/ffa500",
+    image: image3,
   },
   reinforcedGabion: {
     title: "Reinforced Gabion Gravity Wall",
     content: "Gabion gravity walls rely on mass to resist horizontal forces, making them effective in controlling erosion.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image7,
   },
   nailedGabion: {
     title: "Nailed Gabion Walls",
     content: "Nailed gabions provide both aesthetic appeal and effective erosion control.",
-    image: "https://via.placeholder.com/400x250/4682b4",
+    image: image6,
   },
 };
 

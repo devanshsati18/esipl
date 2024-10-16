@@ -117,7 +117,7 @@ function Navbar() {
           <Link to="/gallery" className="block p-2 text-black hover:bg-custom-orange font-bold" onClick={closeDrawer}>Gallery</Link>
           <Link to="/Projects" className="block p-2 text-black hover:bg-custom-orange font-bold" onClick={closeDrawer}>Projects</Link>
           <div className="relative" onMouseEnter={() => handleMouseEnter('knowledgeCenter')} onMouseLeave={handleMouseLeave}>
-            <button className="block w-full text-left p-2 text-black hover:bg-custom-orange font-bold" onClick={() => handleMouseEnter('knowledgeCenter')}>Resource Center</button>
+            <button className="block w-full text-left p-2 text-black hover:bg-custom-orange font-bold" onClick={() => handleMouseEnter('knowledgeCenter')}>Resource Centre</button>
             {openDropdown === 'knowledgeCenter' && (
               <div className="bg-white bg-opacity-50 mt-2 rounded shadow-lg z-20 w-full">
                 <Link to="/Brochure" className="block p-2 text-black hover:bg-custom-orange transition-colors duration-300 text-base" onClick={closeDrawer}>Brochure</Link>

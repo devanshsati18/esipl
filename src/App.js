@@ -31,7 +31,7 @@ import Brochure from './Pages/ResourceCenter/Brochure/Brochure.jsx';
 import ImportantCircular from './Pages/ResourceCenter/ImportantCirculars/ImportantCircular.jsx';
 
 //career
-import Career from './Pages/Career/Career.jsx';
+import Career from './Pages/Carrer/Career.jsx';
 
 // Lazy load pages
 const HomePage = lazy(() => import('./Pages/Home/HomePage'));

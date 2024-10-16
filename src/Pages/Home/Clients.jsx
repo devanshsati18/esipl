@@ -10,7 +10,7 @@ function Clients() {
     const rows = [];
     const imagesPerRow = Math.ceil(clientImages.length / 4);
     
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) {
         rows.push(clientImages.slice(i * imagesPerRow, (i + 1) * imagesPerRow));
     }
   
@@ -21,15 +21,6 @@ function Clients() {
         config: { duration: 30000 },
         reset: true,
         loop: true,
-    });
-
-    const marqueeReverseAnimation = useSpring({
-        from: { transform: "translateX(100%)" },
-        to: { transform: "translateX(0%)" },
-        config: { duration: 30000 },
-        reset: true,
-        loop: true,
-        delay: 3000,
     });
 
     return (
@@ -44,23 +35,19 @@ function Clients() {
                     <div className="overflow-hidden w-full relative mt-10" key={rowIndex}>
                         <animated.div
                             className="flex whitespace-nowrap"
-                            style={marqueeAnimation}
+                            style={{
+                                ...marqueeAnimation,
+                                width: '100vw', // Set the width to 100% of the viewport
+                            }}
                         >
                             {row.map((el, index) => (
                                 <div key={index} className="flex-shrink-0 flex items-center justify-around whitespace-nowrap p-2">
                                     <img src={el} className="w-40 h-auto rounded-lg shadow-md" alt={`client-${index}`} />
                                 </div>
                             ))}
-                        </animated.div>
-                        <animated.div
-                            className="absolute top-0 left-0 flex whitespace-nowrap"
-                            style={{
-                                ...marqueeReverseAnimation,
-                                transform: "translateX(-100%)", // Ensure this is the starting position
-                            }}
-                        >
+                            {/* Duplicate row for seamless looping */}
                             {row.map((el, index) => (
-                                <div key={index} className="flex-shrink-0 flex items-center justify-around whitespace-nowrap p-2">
+                                <div key={`dup-${index}`} className="flex-shrink-0 flex items-center justify-around whitespace-nowrap p-2">
                                     <img src={el} className="w-40 h-auto rounded-lg shadow-md" alt={`client-${index}`} />
                                 </div>
                             ))}

@@ -9,15 +9,15 @@ export function CustomSlider() {
   const slidesContent = [
     {
       heading: "Building tomorrow's foundation today",
-      
+      content: "Your reliable partner in progress.",
     },
     {
       heading: "Creating tomorrow's landmarks with today's expertise",
-      
+      content: "Innovative solutions for modern challenges.",
     },
     {
       heading: "Crafting the pillars of progress for tomorrow",
-      
+      content: "Experience, commitment, and excellence.",
     },
   ];
 
@@ -69,20 +69,21 @@ export function CustomSlider() {
       <div
         style={{
           position: 'absolute',
-          top: 0,
+          top: '0',
           left: 0,
           width: '100%',
-          height: '100%',
+          height: '20%', // Height of the overlay
           background: 'rgba(255, 165, 0, 0.75)',
-          clipPath: 'polygon(0% 0%, 60% 0%, 20% 100%, 0% 100%)',
+          clipPath: 'polygon(0% 0%,50% 0%, 30% 90%, 0% 100%)',
           zIndex: 1,
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           alignItems: 'flex-start',
           padding: '1rem',
           boxSizing: 'border-box',
           overflow: 'hidden',
+          transform: 'translateY(33%)', // Pushes the overlay down by 33%
         }}
       >
         <div className="text-left">

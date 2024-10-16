@@ -1,4 +1,3 @@
-// src/AboutUs.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import 'animate.css';
@@ -7,33 +6,39 @@ const slides = [
   {
     heading: 'Who we are',
     image: 'https://via.placeholder.com/1200x800?text=Image+1',
-    content: 'Earthcon Systems India Private Limited is an ISO: 9001: 2015 certified organization having experience of more than 20 years. We are dedicated to driving innovation in the Geosynthetics field. With a passion for excellence and commitment to sustainability, we provide cutting-edge solutions that address the evolving needs of our clients.',
+    content: 'Earthcon Systems India Private Limited is an ISO: 9001: 2015 certified organization having experience of more than 20 years. We are dedicated to driving innovation in the Geosynthetics field.',
+    bgColor: 'bg-gradient-to-r from-blue-400 to-purple-500',
   },
   {
     heading: 'Vision & Mission',
     image: 'https://via.placeholder.com/1200x800?text=Image+2',
-    content: 'Our mission is to lead the way in Retaining structures, Geohazard Mitigation, Geosynthetic Pavement Applications, etc. by delivering innovative, robust and sustainable solutions. Our commitment is to provide effective, reliable and environmentally conscious solutions that address complex geotechnical challenges and safeguard communities.',
+    content: 'Our mission is to lead the way in Retaining structures, Geohazard Mitigation, and Geosynthetic Pavement Applications by delivering innovative solutions.',
+    bgColor: 'bg-gradient-to-r from-green-400 to-teal-500',
   },
   {
-    heading: "From MD’s Desk ",
+    heading: "From MD’s Desk",
     image: 'https://via.placeholder.com/1200x800?text=Image+3',
-    content: "Our commitment to excellence is reflected in the meticulous care and expertise we bring to each challenge. We are grateful for your trust and excited about the opportunities to collaborate on building a stronger future.",
+    content: "Our commitment to excellence is reflected in the meticulous care we bring to each challenge.",
+    smallHeading: "Message from the MD", // Small heading for slide 3
+    bgColor: 'bg-gradient-to-r from-red-400 to-yellow-500',
   },
   {
-    heading: "Our Key Persons ",
-    image: 'https://via.placeholder.com/1200x800?text=Image+4',
-    content: "Additional content will go there ",
+    heading: "Our Key Persons",
+    images: [
+      { src: 'https://via.placeholder.com/800x600?text=Key+Person+1', smallHeading: "Key Person 1" },
+      { src: 'https://via.placeholder.com/800x600?text=Key+Person+2', smallHeading: "Key Person 2" },
+    ],
+    content: "Meet our dedicated team who drive our vision forward.",
+    bgColor: 'bg-gradient-to-r from-pink-400 to-orange-500',
   }
 ];
 
 const AboutUs = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [nextIndex, setNextIndex] = useState((currentIndex + 1) % slides.length);
   const imageControls = useAnimation();
   const intervalRef = useRef(null);
 
   useEffect(() => {
-    // Automatically change slides every 8 seconds
     intervalRef.current = setInterval(() => {
       handleNext();
     }, 8000);
@@ -42,99 +47,77 @@ const AboutUs = () => {
   }, [currentIndex]);
 
   useEffect(() => {
-    // Trigger slide change animation
     animateSlideChange();
   }, [currentIndex]);
 
   const handleNext = () => {
-    const nextIndex = (currentIndex + 1) % slides.length;
-    setNextIndex(nextIndex);
-    setCurrentIndex(nextIndex);
-  };
-
-  const handlePrevious = () => {
-    const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
-    setNextIndex(prevIndex);
-    setCurrentIndex(prevIndex);
+    setCurrentIndex((currentIndex + 1) % slides.length);
   };
 
   const animateSlideChange = async () => {
-    // Animate the outgoing image
-    await imageControls.start({
-      x: '-100%',
-      opacity: 0,
-      transition: { duration: 0.5, ease: 'easeInOut' }
-    });
-
-    // Prepare the incoming image
-    imageControls.start({
-      x: '100%',
-      opacity: 0,
-      transition: { duration: 0 }
-    });
-
-    // Animate the incoming image into view
-    imageControls.start({
-      x: '0%',
-      opacity: 1,
-      transition: { duration: 0.5, ease: 'easeInOut' }
-    });
+    await imageControls.start({ x: '-100%', opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } });
+    imageControls.start({ x: '100%', opacity: 0, transition: { duration: 0 } });
+    imageControls.start({ x: '0%', opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } });
   };
 
   return (
-    <div className="h-screen flex flex-col relative overflow-hidden">
-      {/* Fixed Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/50 to-white z-0"></div>
-
-      {/* Fixed Heading */}
-      <header className="w-full bg-white text-center py-4 z-10">
-        <h1 className="text-4xl font-bold text-orange-600">Who we are</h1>
+    <div className={`h-2/3 flex flex-col relative overflow-hidden ${slides[currentIndex].bgColor}`}>
+      {/* Header Section */}
+      <header className="bg-white shadow-md py-6 text-center">
+        <h1 className="text-5xl font-bold text-orange-600">About Us</h1>
       </header>
 
       {/* Main Content */}
-      <div className="relative flex flex-1 mt-16 overflow-hidden">
+      <div className="relative flex flex-1 mt-8 overflow-hidden">
         {/* Content Section */}
-        <div className="flex flex-col justify-center p-4 w-full md:w-1/2 z-10 relative align-text-top">
-          <h2 className="text-xl font-bold align-text-top">{slides[currentIndex].heading}</h2>
-          <p className="mt-2">{slides[currentIndex].content}</p>
+        <div className="flex flex-col justify-center p-8 w-full md:w-1/2 z-10 h-[400px]"> {/* Fixed height */}
+          <h2 className="text-4xl font-extrabold text-white">{slides[currentIndex].heading}</h2>
+          <p className="mt-4 text-lg text-white">{slides[currentIndex].content}</p>
         </div>
 
         {/* Image Section */}
         <div className="relative w-full md:w-1/2 flex items-center justify-center overflow-hidden">
-          <motion.div
-            className="absolute w-full h-full flex"
-            animate={imageControls}
-            initial={{ x: '0%', opacity: 1 }}
-          >
-            <motion.img
-              src={slides[currentIndex].image}
-              alt="Current Slide"
-              className="w-full h-auto object-cover"
-              style={{ position: 'absolute', top: 0 }}
-            />
-            <motion.img
-              src={slides[nextIndex].image}
-              alt="Next Slide"
-              className="w-full h-auto object-cover"
-              initial={{ x: '100%' }}
-              animate={{ x: '0%' }}
-              transition={{ duration: 0.5, ease: 'easeInOut' }}
-              style={{ position: 'absolute', top: 0 }}
-            />
-          </motion.div>
+          {currentIndex < 3 ? (
+            <div className="flex flex-col items-center">
+              <motion.img
+                src={slides[currentIndex].image}
+                alt="Current Slide"
+                className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+                animate={imageControls}
+              />
+              {currentIndex === 2 && (
+                <h3 className="text-xl text-white text-center mt-2">{slides[currentIndex].smallHeading}</h3>
+              )}
+            </div>
+          ) : (
+            <div className="flex justify-around items-center">
+              {slides[currentIndex].images.map((img, index) => (
+                <div key={index} className="flex flex-col items-center mx-2">
+                  <motion.img
+                    src={img.src}
+                    alt={`Key Person ${index + 1}`}
+                    className="w-64 h-64 object-cover rounded-lg shadow-lg" // Increased image size
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1, transition: { duration: 0.5 } }}
+                  />
+                  <h3 className="text-xl text-white text-center mt-2">{img.smallHeading}</h3> {/* Small heading for key persons */}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
       {/* Navigation Arrows */}
-      <div className="absolute bottom-4 w-full flex justify-center space-x-4 z-20">
+      <div className="absolute bottom-8 w-full flex justify-center space-x-6 z-20">
         <button
-          className="bg-orange-600 text-white p-2 rounded-full"
-          onClick={handlePrevious}
+          className="bg-white text-orange-600 p-3 rounded-full shadow-lg hover:bg-orange-500 hover:text-white transition"
+          onClick={() => setCurrentIndex((currentIndex - 1 + slides.length) % slides.length)}
         >
           &lt;
         </button>
         <button
-          className="bg-orange-600 text-white p-2 rounded-full"
+          className="bg-white text-orange-600 p-3 rounded-full shadow-lg hover:bg-orange-500 hover:text-white transition"
           onClick={handleNext}
         >
           &gt;

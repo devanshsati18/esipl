@@ -2,23 +2,27 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import image1 from '../../Assets/What we do Photos/Geohazard mitigation/Heading/image1.jpg'
-const imageSliderData = [image1];
+import image2 from '../../Assets/What we do Photos/Geohazard mitigation/SDA.jpeg.jpg'
+import image3 from '../../Assets/What we do Photos/Geohazard mitigation/Rockfall Barrier/image2.png'
+import image4 from '../../Assets/What we do Photos/Geohazard mitigation/Rockfall Bolting/Screenshot 2024-10-01 143147.png'
+import image5 from '../../Assets/What we do Photos/Geohazard mitigation/Rockfall Drapery System/image4.png'
+const imageSliderData = [image1,image2];
 
 const solutionContent = {
   rockfallBarrier: {
     title: "Rockfall Barrier",
     content: "A rockfall barrier is a protective structure designed to intercept and stop falling rocks or debris from reaching areas of high value, such as roads, buildings, or infrastructure.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image3,
   },
   draperySystem: {
     title: "Rockfall Drapery Systems",
     content: "A rockfall drapery system is a type of rockfall protection designed to stabilize and control loose rocks on steep or unstable slopes.",
-    image: "https://via.placeholder.com/400x250/4682b4",
+    image: image5,
   },
   rockBolting: {
     title: "Rock Bolting",
     content: "Rock bolting is a ground support technique used in geotechnical engineering and mining to stabilize rock masses.",
-    image: "https://via.placeholder.com/400x250/ff6347",
+    image: image4,
   },
 };
 
@@ -45,7 +49,7 @@ const GeohazardMitigation = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
+        <h1 className="text-7xl pt-10 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
           Geohazard Mitigation
         </h1>
         <p className="text-2xl mt-4 text-gray-600">Mitigating risks, securing the future.</p>

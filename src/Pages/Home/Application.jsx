@@ -3,11 +3,11 @@ import 'animate.css'; // Import Animate.css
 
 // Import images
 import image8 from '../../Assets/What we do Photos/Repair & Rehabilitation/image1.jpg';
-import image7 from '../../Assets/What we do Photos/Erosion Control/image1.png';
+import image7 from '../../Assets/What we do Photos/Erosion Control/img3.png';
 import imaeg6 from '../../Assets/What we do Photos/Reinforced Soil Slope/image1.png';
-import image5 from '../../Assets/What we do Photos/Ground Improvement/Basal Reinforcement/image1.png';
+import image5 from '../../Assets/What we do Photos/Ground Improvement/Ground improvement 2.jpg';
 import image4 from '../../Assets/What we do Photos/Geosynthetic Pavement Applications/Fig3-Alternate-Figure-3.jpg';
-import image3 from '../../Assets/What we do Photos/Geohazard mitigation/Heading/image1.jpg';
+import image3 from '../../Assets/What we do Photos/Geohazard mitigation/Geohazard Mitigation.png';
 import image2 from '../../Assets/What we do Photos/Retaining Structures/image1.jpg';
 import image1 from '../../Assets/What we do Photos/Friction Slab cum Crash Barrier/image1.jpg';
 
