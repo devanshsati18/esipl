@@ -44,7 +44,7 @@
         "ProjectNumber": 228,
         "BriefDetails": "Soil Nailing Work",
         "AuthorityClient": "KCC/NHAI",
-        "Quantity": 0,
+        "Quantity": "-",
         "TypeofWork": "SDA & Driven Soil Nailing",
         "Location": "Rajasthan",
         "StatusofWork": "Ongoing"
@@ -84,7 +84,7 @@
         "ProjectNumber": 223,
         "BriefDetails": "Slope Protection Work",
         "AuthorityClient": "DRN/NHAI",
-        "Quantity": null,
+        "Quantity": "-",
         "TypeofWork": "Slope Protection by -Fine Grass/Vetiver/Coirmat/Geocell",
         "Location": "Tamil Nadu",
         "StatusofWork": "Ongoing"
@@ -104,7 +104,7 @@
         "ProjectNumber": 221,
         "BriefDetails": "Lift Irrigation",
         "AuthorityClient": "MRP Associates",
-        "Quantity": 0,
+        "Quantity": "-",
         "TypeofWork": "PET Geostrap with Large Panel Fascia",
         "Location": "Maharastra",
         "StatusofWork": "Ongoing"
@@ -114,7 +114,7 @@
         "ProjectNumber": 220,
         "BriefDetails": "Soil Nailing Work",
         "AuthorityClient": "KCC/NHAI",
-        "Quantity": 0,
+        "Quantity": "-",
         "TypeofWork": "SDA & Driven Soil Nailing",
         "Location": "Rajasthan",
         "StatusofWork": "Completed"
@@ -124,7 +124,7 @@
         "ProjectNumber": 219,
         "BriefDetails": "CGRG & GSY Nailing Work",
         "AuthorityClient": "Welspun/NHAI",
-        "Quantity": 0,
+        "Quantity": "-",
         "TypeofWork": "SDA & Driven Soil Nailing",
         "Location": "Uttar Pradesh",
         "StatusofWork": "Completed"
@@ -164,7 +164,7 @@
         "ProjectNumber": 215,
         "BriefDetails": "CGRG & GSY Inspection Work",
         "AuthorityClient": "Welspun/NHAI",
-        "Quantity": null,
+        "Quantity": "-",
         "TypeofWork": "RS Wall Inspection Work",
         "Location": "Uttar Pradesh & Uttarakhand",
         "StatusofWork": "Completed"
@@ -574,7 +574,7 @@
         "ProjectNumber": 164,
         "BriefDetails": "LRR",
         "AuthorityClient": "PNC/NHAI",
-        "Quantity": null,
+        "Quantity": "-",
         "TypeofWork": "Friction Slab cum Crash Barrier",
         "Location": "Uttar Pradesh",
         "StatusofWork": "Completed"
@@ -964,7 +964,7 @@
         "ProjectNumber": 113,
         "BriefDetails": "Nakodar NH71",
         "AuthorityClient": "PIL",
-        "Quantity": null,
+        "Quantity": "-",
         "TypeofWork": null,
         "Location": "Punjab",
         "StatusofWork": "Completed"
