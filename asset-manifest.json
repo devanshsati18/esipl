@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/esipl/static/css/main.a37f75df.css",
-    "main.js": "/esipl/static/js/main.5b2b3686.js",
+    "main.js": "/esipl/static/js/main.9f2fac93.js",
     "static/css/120.b91bccb2.chunk.css": "/esipl/static/css/120.b91bccb2.chunk.css",
     "static/js/120.06a5053e.chunk.js": "/esipl/static/js/120.06a5053e.chunk.js",
     "static/js/453.ef2d6374.chunk.js": "/esipl/static/js/453.ef2d6374.chunk.js",
@@ -54,13 +54,13 @@
     "static/media/bg3.jpg": "/esipl/static/media/bg3.2ce255087cb19b8254db.jpg",
     "static/media/116.jpg": "/esipl/static/media/116.bd34804a27349d9a075c.jpg",
     "static/media/whoweare.jpg": "/esipl/static/media/whoweare.58021cbbb45bcbdd3fb4.jpg",
-    "static/media/image4.jpg": "/esipl/static/media/image4.1aa7c7dd19645209b260.jpg",
     "static/media/bg1.jpg": "/esipl/static/media/bg1.91c13259d5e4bcf85dce.jpg",
     "static/media/114.jpg": "/esipl/static/media/114.9a0679d65e004e8bf757.jpg",
     "static/media/117.jpg": "/esipl/static/media/117.1e502014e15a89651fbc.jpg",
     "static/media/112.jpg": "/esipl/static/media/112.ac39134d8ec5f2e06e30.jpg",
     "static/media/image2.jpg": "/esipl/static/media/image2.efe5dff010bdc8f7d6a8.jpg",
     "static/media/126.jpg": "/esipl/static/media/126.cd57ae9b8a4bd345a3cf.jpg",
+    "static/media/image4.jpg": "/esipl/static/media/image4.2219b8a5aa4d6fefbb8d.jpg",
     "static/media/115.jpg": "/esipl/static/media/115.6c2c9649adc2d102ce5f.jpg",
     "static/media/10.jpg": "/esipl/static/media/10.87a71ef52529d49b695d.jpg",
     "static/media/12.jpg": "/esipl/static/media/12.784d42ef3ea123173b00.jpg",
@@ -175,7 +175,7 @@
     "static/media/slick.woff": "/esipl/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/esipl/index.html",
     "main.a37f75df.css.map": "/esipl/static/css/main.a37f75df.css.map",
-    "main.5b2b3686.js.map": "/esipl/static/js/main.5b2b3686.js.map",
+    "main.9f2fac93.js.map": "/esipl/static/js/main.9f2fac93.js.map",
     "120.b91bccb2.chunk.css.map": "/esipl/static/css/120.b91bccb2.chunk.css.map",
     "120.06a5053e.chunk.js.map": "/esipl/static/js/120.06a5053e.chunk.js.map",
     "453.ef2d6374.chunk.js.map": "/esipl/static/js/453.ef2d6374.chunk.js.map",
@@ -183,6 +183,6 @@
   },
   "entrypoints": [
     "static/css/main.a37f75df.css",
-    "static/js/main.5b2b3686.js"
+    "static/js/main.9f2fac93.js"
   ]
 }
