@@ -25,7 +25,7 @@ function Navbar() {
     clearTimeout(timeoutId);
     const id = setTimeout(() => {
       setOpenDropdown(null);
-    }, 500);
+    }, 100);
     setTimeoutId(id);
   };
 

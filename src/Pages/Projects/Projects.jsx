@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'animate.css'; // Import Animate.css for animations
 import projectsData from './Projects.json'; // Adjust the path to your JSON file
+import {FaNewspaper } from 'react-icons/fa';
 
 const Projects = () => {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -28,16 +29,6 @@ const Projects = () => {
     
       
 
-      {/* Loader */}
-      {loading && (
-        <div className="fixed inset-0 bg-orange-500 bg-opacity-50 flex items-center justify-center z-20">
-          <div className="loader animate__animated animate__fadeIn">
-            <div className="spinner-border text-white" role="status">
-              <span className="sr-only">Projects</span>
-            </div>
-          </div>
-        </div>
-      )}
 
       
 
@@ -46,9 +37,10 @@ const Projects = () => {
         <div className="container mx-auto px-4">
           {/* Projects List Title */}
           <div className="text-center mt-8 mb-8">
-            <h3 className="text-3xl font-semibold text-blue-600 animate__animated animate__fadeInDown">
-              <i className="fa fa-newspaper-o" aria-hidden="true"></i> Projects List
+            <h3 className="text-5xl font-semibold text-orange-600 animate__animated animate__fadeInDown">
+              <i className="text-4xl font-bold mb-2 text-orange-600 pt-9" aria-hidden="true"></i> Projects List
             </h3>
+            <span className="block text-gray-600 text-lg pt-2">Earthcon Systems (India) Pvt. Ltd.</span>
           </div>
 
           {/* Project List */}

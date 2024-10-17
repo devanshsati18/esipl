@@ -138,7 +138,7 @@ const FrictionSlabcumCrashBarrier = () => {
                   <div className="flex items-center gap-6">
                     
                     {/* Content on the right */}
-                    <div className="w-2/3">
+                    <div className="w-2/3 text-xl">
                       <p className="text-gray-700">{solutionContent[key].content}</p>
                     </div>
                   </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'animate.css'; // Import Animate.css
 
 // Import images
-import image8 from '../../Assets/What we do Photos/Repair & Rehabilitation/image7.jpg';
+import image8 from '../../Assets/What we do Photos/Repair & Rehabilitation/image4.jpg';
 import image7 from '../../Assets/What we do Photos/Erosion Control/img3.png';
 import imaeg6 from '../../Assets/What we do Photos/Reinforced Soil Slope/image1.png';
 import image5 from '../../Assets/What we do Photos/Ground Improvement/Ground improvement 2.jpg';
@@ -59,7 +59,7 @@ function Application() {
           <span className="text-black"> Do</span>
         </div>
       </div>
-      
+
       {/* Main content section */}
       <div className="w-full flex flex-col lg:flex-row">
         {/* Left Section - Slider for buttons */}
@@ -86,7 +86,7 @@ function Application() {
 
         {/* Right Section - Content */}
         <div className="lg:w-3/4 p-4 lg:p-8 flex flex-col bg-gray-300">
-          <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
+          <div className="flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
             <div className="flex-1 flex items-center justify-center p-8 animate__animated animate__fadeIn">
               <img
                 src={tabContent[activeTab].imgSrc}

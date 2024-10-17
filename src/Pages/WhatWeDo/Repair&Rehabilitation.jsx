@@ -8,7 +8,7 @@ import image4 from '../../Assets/What we do Photos/Repair & Rehabilitation/image
 import image5 from '../../Assets/What we do Photos/Repair & Rehabilitation/image5.jpg'
 
 
-const imageSliderData = [image1,image2,image3,image4,image5];
+const imageSliderData = [image4,image5,image1,image2,image3];
 
 const solutionContent = {
     Safety: {
@@ -107,7 +107,7 @@ const RepairRehabilitation = () => {
         transition={{ duration: 1 }}
       >
         <h3 className="text-center text-4xl font-bold text-gray-700 mb-10">
-          Benifits of Repair & Rehabilitation
+          Benefits of Repair & Rehabilitation
         </h3>
 
         {/* Dropdowns for Solutions */}
@@ -120,7 +120,7 @@ const RepairRehabilitation = () => {
                 whileHover={{ scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <h4 className="text-6xl font-bold text-orange-500">
+                <h4 className="text-2xl font-bold text-orange-500">
                   {solutionContent[key].title}
                 </h4>
               </motion.div>
@@ -135,8 +135,8 @@ const RepairRehabilitation = () => {
                   <div className="flex items-center gap-6">
                     
                     {/* Content on the right */}
-                    <div className="w-2/3">
-                      <p className="text-gray-700 text-9xl">{solutionContent[key].content}</p>
+                    <div className="w-2/3 text-xl">
+                      <p className="text-gray-700 ">{solutionContent[key].content}</p>
                     </div>
                   </div>
                 </motion.div>

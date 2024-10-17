@@ -30,12 +30,16 @@ export function CustomSlider() {
     autoplay: true,
     autoplaySpeed: 4000,
     beforeChange: (current, next) => setCurrentSlide(next),
-    appendDots: (dots) => (
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
-        <ul style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
-          {dots}
-        </ul>
-      </div>
+    customPaging: (i) => (
+      <div
+        style={{
+          height: '10px',
+          width: '10px',
+          borderRadius: '50%',
+          background: i === currentSlide ? 'black' : 'white',
+          margin: '0 5px',
+        }}
+      />
     ),
   };
 
@@ -114,6 +118,23 @@ export function CustomSlider() {
             {slidesContent[currentSlide].content}
           </p>
         </div>
+      </div>
+
+      {/* Optional: Bottom Dots for the Bottom Carousel */}
+      <div style={{ position: 'absolute', bottom: '10px', left: '50%', transform: 'translateX(-50%)', zIndex: 2 }}>
+        {slidesContent.map((_, index) => (
+          <div
+            key={index}
+            style={{
+              height: '10px',
+              width: '10px',
+              borderRadius: '50%',
+              background: index === currentSlide ? 'black' : 'white',
+              display: 'inline-block',
+              margin: '0 5px',
+            }}
+          />
+        ))}
       </div>
     </div>
   );

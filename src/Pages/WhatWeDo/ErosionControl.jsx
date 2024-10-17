@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import image1 from '../../Assets/What we do Photos/Erosion Control/image1.png';
-import image2 from '../../Assets/What we do Photos/Erosion Control/image2.png';
 
-const imageSliderData = [image1,image2];
+import image3 from '../../Assets/What we do Photos/Erosion Control/img3.png'
+import image4 from '../../Assets/What we do Photos/Erosion Control/image4.jpg'
+import image5 from '../../Assets/What we do Photos/Erosion Control/image5.jpg'
+import image6 from '../../Assets/What we do Photos/Erosion Control/image6.png'
+import image7 from '../../Assets/What we do Photos/Erosion Control/img3.png'
+
+const imageSliderData = [image7,image4,image5,image6,image3];
 
 const solutionContent = {
     SoilConservation: {
@@ -107,7 +111,7 @@ const ErosionControl = () => {
         transition={{ duration: 1 }}
       >
         <h3 className="text-center text-4xl font-bold text-gray-700 mb-10">
-          Benifits of Erosion Control
+          Benefits of Erosion Control
         </h3>
 
         {/* Dropdowns for Solutions */}
@@ -135,7 +139,7 @@ const ErosionControl = () => {
                   <div className="flex items-center gap-6">
                     
                     {/* Content on the right */}
-                    <div className="w-2/3">
+                    <div className="w-2/3 text-xl">
                       <p className="text-gray-700">{solutionContent[key].content}</p>
                     </div>
                   </div>

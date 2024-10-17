@@ -15,7 +15,7 @@ const solutionContent = {
   mseWall: {
     title: "Mechanically Stabilized Earth Wall",
     content: "A Mechanically Stabilized Earth (MSE) wall combines soil with reinforcement materials to provide stability and support. MSE walls efficiently handle high loads and are versatile in various soil conditions.",
-    image: image8,
+    image: image5,
   },
   backToBackWall: {
     title: "Back-to-Back Wall",
@@ -35,7 +35,7 @@ const solutionContent = {
   smseWall: {
     title: "Shored Mechanically Stabilized Earth Wall",
     content: "This type of retaining wall is ideal for limited spaces or when a sleek appearance is required.",
-    image: image5,
+    image: image8,
   },
   bridgeTech: {
     title: "Bridge Tech-Abutments",
@@ -159,7 +159,7 @@ const RetrainingStructures = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="flex items-center gap-6">
-                    <div className="w-2/3">
+                    <div className="w-2/3 text-xl">
                       <p className="text-gray-700">{solutionContent[key].content}</p>
                     </div>
                     <img

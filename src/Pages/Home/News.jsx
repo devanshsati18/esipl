@@ -26,7 +26,7 @@ const News = () => {
       <div className="container mx-auto">
         <div className="text-center mb-10 flex items-center justify-center">
           <FaNewspaper className="text-orange-500 text-4xl mr-4" />
-          <h1 className="text-5xl font-bold text-orange-500">News</h1>
+          <h1 className="text-5xl font-bold text-orange-500">News Update</h1>
         </div>
         <div className="relative">
           {/* Timeline line */}

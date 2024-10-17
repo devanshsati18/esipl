@@ -138,7 +138,7 @@ const GeohazardMitigation = () => {
                       className="w-1/3 h-auto rounded-lg shadow-md"
                     />
                     {/* Content on the right */}
-                    <div className="w-2/3">
+                    <div className="w-2/3 text-xl">
                       <p className="text-gray-700">{solutionContent[key].content}</p>
                     </div>
                   </div>

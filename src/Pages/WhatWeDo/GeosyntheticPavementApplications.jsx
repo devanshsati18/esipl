@@ -152,7 +152,7 @@ const GeosyntheticPavementApplications = () => {
                     {/* Image on the left */}
                     
                     {/* Content on the right */}
-                    <div className="w-2/3">
+                    <div className="w-2/3 text-xl">
                       <p className="text-gray-700">{solutionContent[key].content}</p>
                     </div>
                   </div>

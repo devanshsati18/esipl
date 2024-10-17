@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import image3 from '../../Assets/What we do Photos/Reinforced Soil Slope/image3.png'
 import image1 from '../../Assets/What we do Photos/Reinforced Soil Slope/image1.png';
 import image2 from '../../Assets/What we do Photos/Reinforced Soil Slope/image2.png'
 
-const imageSliderData = [image1,image2];
+const imageSliderData = [image3,image2];
 
 const solutionContent = {
   IncreasedStability: {
@@ -103,7 +103,7 @@ const ReinforcedSoilSlope = () => {
         transition={{ duration: 1 }}
       >
         <h3 className="text-center text-4xl font-bold text-gray-700 mb-10">
-          Types of Solutions to Prevent Reinforced Soil Slope
+          Benefits of Reinforced Soil Slope
         </h3>
 
         {/* Dropdowns for Solutions */}
@@ -131,7 +131,7 @@ const ReinforcedSoilSlope = () => {
                   <div className="flex items-center gap-6">
                     
                     {/* Content on the right */}
-                    <div className="w-2/3">
+                    <div className="w-2/3 text-xl">
                       <p className="text-gray-700">{solutionContent[key].content}</p>
                     </div>
                   </div>

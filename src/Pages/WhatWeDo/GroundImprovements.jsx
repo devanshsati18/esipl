@@ -7,8 +7,9 @@ import image3 from '../../Assets/What we do Photos/Ground Improvement/Stone or S
 import image4 from '../../Assets/What we do Photos/Ground Improvement/Prefabricated Vertical Drain (PVD)/Screenshot 2024-10-14 163953.png'
 import image5 from '../../Assets/What we do Photos/Ground Improvement/Prefabricated Vertical Drain (PVD)/image5.jpg'
 import image6 from '../../Assets/What we do Photos/Ground Improvement/Prefabricated Vertical Drain (PVD)/image6.jpg' 
+import image7 from '../../Assets/What we do Photos/Ground Improvement/Ground improvement 2.jpg'
 
-const imageSliderData = [image5,image6];
+const imageSliderData = [image5,image6,image7,image1,image3];
 
 const solutionContent = {
     BasalReinforcement: {
@@ -48,7 +49,7 @@ const GroundImprovements = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8 py-20">
+    <div className="min-h-screen bg-gray-100  py-20">
       {/* Hero Section */}
       <motion.div
         className="text-center mb-16"
@@ -56,7 +57,7 @@ const GroundImprovements = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-7xl font-extrabold text-transparent pt-10 bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
+        <h1 className="text-7xl font-extrabold text-transparent pt-0 bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
         Ground Improvements
         </h1>
         {/* <p className="text-2xl mt-4 text-gray-600">Mitigating risks, securing the future.</p> */}
@@ -145,7 +146,7 @@ const GroundImprovements = () => {
                       className="w-1/3 h-auto rounded-lg shadow-md"
                     />
                     {/* Content on the right */}
-                    <div className="w-2/3">
+                    <div className="w-2/3 text-xl">
                       <p className="text-gray-700">{solutionContent[key].content}</p>
                     </div>
                   </div>
