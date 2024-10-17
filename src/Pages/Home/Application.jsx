@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'animate.css'; // Import Animate.css
 
 // Import images
-import image8 from '../../Assets/What we do Photos/Repair & Rehabilitation/image1.jpg';
+import image8 from '../../Assets/What we do Photos/Repair & Rehabilitation/image7.jpg';
 import image7 from '../../Assets/What we do Photos/Erosion Control/img3.png';
 import imaeg6 from '../../Assets/What we do Photos/Reinforced Soil Slope/image1.png';
 import image5 from '../../Assets/What we do Photos/Ground Improvement/Ground improvement 2.jpg';

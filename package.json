@@ -14,11 +14,13 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "framer-motion": "^11.4.0",
+    "jquery": "^3.7.1",
     "jszip": "^3.10.1",
     "leaflet": "^1.9.4",
     "pdfjs-dist": "^4.7.76",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-flip-page": "^1.6.4",
     "react-icons": "^5.3.0",
     "react-intersection-observer": "^9.13.0",
     "react-lazy-load-image-component": "^1.6.2",
@@ -31,6 +33,7 @@
     "react-window": "^1.8.10",
     "slick-carousel": "^1.8.1",
     "togeojson": "^0.16.0",
+    "turn.js": "^1.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

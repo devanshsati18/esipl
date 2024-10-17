@@ -24,7 +24,7 @@ export function CustomSlider() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 7000,
+    speed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -72,9 +72,9 @@ export function CustomSlider() {
           top: '0',
           left: 0,
           width: '100%',
-          height: '20%', // Height of the overlay
+          height: '40%', // Height of the overlay
           background: 'rgba(255, 165, 0, 0.75)',
-          clipPath: 'polygon(0% 0%,50% 0%, 30% 90%, 0% 100%)',
+          clipPath: 'polygon(0% 0%,60% 0%, 25% 70%, 0% 71%)',
           zIndex: 1,
           display: 'flex',
           flexDirection: 'column',

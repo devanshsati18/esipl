@@ -8,6 +8,12 @@ const TalkToUs = () => {
                 <div className="absolute bg-white rounded-full w-40 h-40 opacity-25 transform -translate-x-1/4 -translate-y-1/4"></div>
                 <div className="absolute bg-white rounded-full w-32 h-32 opacity-20 transform translate-x-1/4 translate-y-1/4"></div>
                 <div className="absolute bg-white rounded-full w-48 h-48 opacity-15 transform -translate-x-1/2 translate-y-1/2"></div>
+                {/* Additional Decorative Shapes */}
+                <div className="absolute bg-white rounded-full w-24 h-24 opacity-30 transform -translate-x-1/3 translate-y-1/3"></div>
+                <div className="absolute bg-white rounded-full w-36 h-36 opacity-25 transform translate-x-1/2 -translate-y-1/4"></div>
+                <div className="absolute bg-white rounded-full w-52 h-52 opacity-10 transform -translate-x-1/4 translate-y-1/2"></div>
+                <div className="absolute bg-white rounded-full w-28 h-28 opacity-20 transform -translate-x-1/2 -translate-y-1/4"></div>
+                <div className="absolute bg-white rounded-full w-44 h-44 opacity-15 transform translate-x-1/3 -translate-y-1/3"></div>
             </div>
 
             <div className="flex flex-col items-start w-full max-w-md pl-6 z-10">

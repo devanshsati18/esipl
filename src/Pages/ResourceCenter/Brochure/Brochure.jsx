@@ -1,27 +1,24 @@
-import React from 'react';
-import brochurePdf from '../../../Assets/Resource Centre/Brochure/Brochure.pdf'; // Adjust path as necessary
+import React from "react";
 
 const Brochure = () => {
+    const pdfUrl = '/Resource Centre/Brochure/Brochure.pdf'; // Ensure this is the correct path
+
     return (
-        <div className="flex flex-col justify-center items-center h-screen p-4 pt-10">
-            <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
-                Brochure
+        <div className="min-h-screen bg-gray-200 p-4 pt-20">
+            <h1 className="text-7xl font-extrabold pt-10 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500 py-3">
+                Erosion Control
             </h1>
-            <div className="mt-8" style={{ overflow: 'hidden', width: '100%', height: '900px' }}>
-                <iframe 
-                    src={brochurePdf} 
-                    title="Brochure"
-                    style={{ 
-                        width: '150%', // Scale width
-                        height: '150%', // Scale height
-                        transform: 'scale(0.75)', // Adjust scale factor
-                        transformOrigin: 'top left', // Transform from top-left corner
-                        border: 'none' 
-                    }} 
-                />
-            </div>
+            <iframe 
+                src={pdfUrl} 
+                width="100%" 
+                height="600px" 
+                title="Brochure PDF"
+                style={{ border: 'none' }}
+            >
+                This browser does not support PDFs. Please download the PDF to view it: <a href={pdfUrl}>Download PDF</a>.
+            </iframe>
         </div>
     );
-}
+};
 
 export default Brochure;

@@ -68,7 +68,7 @@ function Navbar() {
         <Link to="/Projects" className="hover:bg-custom-orange p-2 rounded transition-colors duration-300 font-bold">Projects</Link>
         <div className="relative" onMouseEnter={() => handleMouseEnter('knowledgeCenter')} onMouseLeave={handleMouseLeave}>
           <button className="hover:bg-custom-orange p-2 rounded transition-colors duration-300 font-bold">
-            Resource Center
+            Resource Centre
           </button>
           {openDropdown === 'knowledgeCenter' && (
             <div className="absolute left-0 bg-white bg-opacity-50 mt-2 rounded shadow-lg z-20 w-48">
