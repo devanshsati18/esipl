@@ -36,13 +36,7 @@ const IsoCertificate = () => {
                     </div>
                 ))}
             </div>
-            <div className="relative w-full h-3/4 mt-4">
-                <iframe 
-                    src={currentPdf} 
-                    title="ISO Certificate"
-                    className="w-full h-full border-none rounded-lg shadow-lg"
-                />
-            </div>
+            
         </div>
     );
 }

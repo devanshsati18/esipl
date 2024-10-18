@@ -8,7 +8,7 @@ const Career = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Preloader duration
+    }, 1000); // Preloader duration
 
     return () => clearTimeout(timer);
   }, []);
@@ -45,8 +45,8 @@ const Career = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen bg-gray-100">
-        <div className="loader">Loading...</div>
+      <div className="flex items-center justify-center h-screen bg-orange-400 bg-opacity-50">
+        <div className="loader text-white text-5xl">Carrers</div>
       </div>
     );
   }
