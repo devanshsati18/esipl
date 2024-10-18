@@ -3,22 +3,21 @@ import yourImage from '../../Assets/talktous/talk to us.jpg'; // Update with you
 
 const TalkToUs = () => {
     return (
-        <div className="relative flex flex-col lg:flex-row justify-center items-start h-[60vh] p-6 bg-gradient-to-r from-orange-600 to-orange-300 overflow-hidden">
+        <div className="relative flex flex-col lg:flex-row justify-between items-center h-[60vh] p-6 bg-gradient-to-r from-orange-600 to-orange-300 overflow-hidden">
             {/* Decorative Shapes */}
             <div className="absolute inset-0 flex justify-center items-center">
-                <div className="absolute bg-white rounded-full w-40 h-40 opacity-25 transform" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
-                <div className="absolute bg-white rounded-full w-32 h-32 opacity-20 transform" style={{ top: '50%', left: '50%', transform: 'translate(-30%, -30%)' }}></div>
+                <div className="absolute bg-white rounded-full w-40 h-40 opacity-25 transform" style={{ top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
+                <div className="absolute bg-white rounded-full w-32 h-32 opacity-20 transform" style={{ top: '45%', left: '50%', transform: 'translate(-30%, -30%)' }}></div>
                 <div className="absolute bg-white rounded-full w-48 h-48 opacity-15 transform" style={{ top: '50%', left: '50%', transform: 'translate(-40%, -40%)' }}></div>
-                {/* Additional Decorative Shapes */}
-                <div className="absolute bg-white rounded-full w-24 h-24 opacity-30 transform" style={{ top: '50%', left: '50%', transform: 'translate(-60%, -60%)' }}></div>
-                <div className="absolute bg-white rounded-full w-36 h-36 opacity-25 transform" style={{ top: '50%', left: '50%', transform: 'translate(-20%, -20%)' }}></div>
-                <div className="absolute bg-white rounded-full w-52 h-52 opacity-10 transform" style={{ top: '50%', left: '50%', transform: 'translate(-10%, -10%)' }}></div>
-                <div className="absolute bg-white rounded-full w-28 h-28 opacity-20 transform" style={{ top: '50%', left: '50%', transform: 'translate(-70%, -70%)' }}></div>
-                <div className="absolute bg-white rounded-full w-44 h-44 opacity-15 transform" style={{ top: '50%', left: '50%', transform: 'translate(-30%, -30%)' }}></div>
+                <div className="absolute bg-white rounded-full w-24 h-24 opacity-30 transform" style={{ top: '55%', left: '50%', transform: 'translate(-60%, -60%)' }}></div>
+                <div className="absolute bg-white rounded-full w-36 h-36 opacity-25 transform" style={{ top: '60%', left: '50%', transform: 'translate(-20%, -20%)' }}></div>
+                <div className="absolute bg-white rounded-full w-52 h-52 opacity-10 transform" style={{ top: '65%', left: '50%', transform: 'translate(-10%, -10%)' }}></div>
+                <div className="absolute bg-white rounded-full w-28 h-28 opacity-20 transform" style={{ top: '70%', left: '50%', transform: 'translate(-70%, -70%)' }}></div>
+                <div className="absolute bg-white rounded-full w-44 h-44 opacity-15 transform" style={{ top: '75%', left: '50%', transform: 'translate(-30%, -30%)' }}></div>
             </div>
 
             {/* Left Side Content */}
-            <div className="flex flex-col items-start w-full max-w-md pl-6 z-10">
+            <div className="flex flex-col items-start w-full max-w-md z-10">
                 <div className="border-t-4 border-l-4 border-orange-500 p-4 mb-4">
                     <h1 className="text-5xl font-bold text-white">
                         Talk to Us
@@ -40,12 +39,12 @@ const TalkToUs = () => {
             </div>
 
             {/* Right Side Image */}
-            <div className="flex-1 flex justify-center items-center mt-6 lg:mt-0" style={{ marginLeft: '40px' }}>
+            <div className="flex-1 flex justify-end items-center mt-6 lg:mt-0">
                 <img 
                     src={yourImage} 
                     alt="Talk to Us" 
                     className="max-h-[60vh] w-auto object-cover rounded-lg shadow-lg" 
-                    style={{ objectFit: 'cover' }} 
+                    style={{ objectFit: 'cover', marginLeft: 'auto' }} // Ensures the image is in the extreme right corner
                 />
             </div>
         </div>

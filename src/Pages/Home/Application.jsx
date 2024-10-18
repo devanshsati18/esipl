@@ -4,7 +4,7 @@ import 'animate.css'; // Import Animate.css
 // Import images
 import image8 from '../../Assets/What we do Photos/Repair & Rehabilitation/image4.jpg';
 import image7 from '../../Assets/What we do Photos/Erosion Control/img3.png';
-import imaeg6 from '../../Assets/What we do Photos/Reinforced Soil Slope/image1.png';
+import imaeg6 from '../../Assets/What we do Photos/Reinforced Soil Slope/image3.png';
 import image5 from '../../Assets/What we do Photos/Ground Improvement/Ground improvement 2.jpg';
 import image4 from '../../Assets/What we do Photos/Geosynthetic Pavement Applications/Fig3-Alternate-Figure-3.jpg';
 import image3 from '../../Assets/What we do Photos/Geohazard mitigation/Geohazard Mitigation.png';
