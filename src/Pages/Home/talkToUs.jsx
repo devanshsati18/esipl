@@ -3,7 +3,7 @@ import yourImage from '../../Assets/talktous/talk to us.jpg'; // Update with you
 
 const TalkToUs = () => {
     return (
-        <div className="relative flex flex-col lg:flex-row justify-between items-center h-screen lg:h-[60vh] p-0 bg-gradient-to-r from-orange-600 to-orange-300 overflow-hidden">
+        <div className="relative flex flex-col lg:flex-row justify-between items-center h-screen p-0 bg-gradient-to-r from-orange-600 to-orange-300 overflow-hidden">
             {/* Decorative Shapes */}
             <div className="absolute inset-0 flex justify-center items-center">
                 {/* Decorative shapes code remains unchanged */}
@@ -40,12 +40,12 @@ const TalkToUs = () => {
             </div>
 
             {/* Right Side Image */}
-            <div className="flex-1 flex justify-end items-center mt-0 lg:mt-0"> {/* Set mt-0 to eliminate top margin */}
+            <div className="flex-1 flex justify-end items-center mt-0">
                 <img 
                     src={yourImage} 
                     alt="Talk to Us" 
-                    className="h-full max-h-[100vh] w-auto object-contain rounded-lg shadow-lg" // Ensured full height without cropping
-                    style={{ margin: 0 }} // Removes any additional margin
+                    className="h-full w-auto max-h-screen object-contain rounded-lg shadow-lg" // Maintain aspect ratio and prevent overflow
+                    style={{ maxWidth: '100%' }} // Prevent overflow
                 />
             </div>
         </div>

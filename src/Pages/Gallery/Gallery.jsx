@@ -6,11 +6,15 @@ import './Gallery.css'; // Import your custom CSS styles
 const importAll = (r) => r.keys().map(r);
 
 // Import images from each category
-const sitePictureImages = importAll(require.context('../../Assets/Gallery/Site Pictures', false, /\.(png|jpe?g|svg)$/));
-const annualMeetImages = importAll(require.context('../../Assets/Gallery/Annual Meet', false, /\.(png|jpe?jpe?g|svg)$/));
-const festivalCelebrationImages = importAll(require.context('../../Assets/Gallery/Festivals Celebration', false, /\.(png|jpe?jpe?g|svg)$/));
-const coCurricularActivityImages = importAll(require.context('../../Assets/Gallery/Co-curricular Activities', false, /\.(png|jpe?jpe?g|svg)$/));
-
+const sitePictureImages = importAll(require.context('../../Assets/Gallery/SitePictures/', false, /\.(png|jpe?g|svg)$/));
+const annualMeetImages = importAll(require.context('../../Assets/Gallery/AnnualMeet', false, /\.(png|jpe?g|svg)$/));
+const festivalCelebrationImages = importAll(require.context('../../Assets/Gallery/FestivalsCelebration', false, /\.(png|jpe?g|svg)$/));
+const coCurricularActivityImages = importAll(require.context('../../Assets/Gallery/Co-curricularActivities', false, /\.(png|jpe?g|svg)$/));
+// Log results
+console.log('Site Pictures:', sitePictureImages);
+console.log('Annual Meet:', annualMeetImages);
+console.log('Festival Celebration:', festivalCelebrationImages);
+console.log('Co-curricular Activities:', coCurricularActivityImages);
 const Gallery = () => {
     const sectionRefs = useRef([]);
     const [activeSection, setActiveSection] = useState('');
@@ -39,6 +43,7 @@ const Gallery = () => {
                         default:
                             setCurrentImages([]);
                     }
+                    console.log('Active Section:', sectionTitle); // Log active section
                 }
             });
         }, { threshold: 0.5 });
@@ -133,6 +138,7 @@ const GreetingOverlay = () => {
 };
 
 const Section = ({ title, images, setRef, onImageClick }) => {
+    console.log('Images for section:', title, images); // Log images for debugging
     return (
         <section ref={setRef} data-title={title} className="py-16">
             <h2 className="text-4xl font-bold text-center text-orange-600 mb-8">{title}</h2>
