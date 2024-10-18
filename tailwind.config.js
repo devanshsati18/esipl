@@ -26,7 +26,7 @@ module.exports = {
         'custom-blue-hover': 'rgba(0, 0, 255, 0.25)', // 25% opacity
       },
       fontFamily: {
-        'times': ['Times New Roman', 'serif'], // Added Times New Roman font
+        'calibri': ['Calibri', 'sans-serif'], // Added Calibri font
       },
     },
   },

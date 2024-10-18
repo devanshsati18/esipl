@@ -7,5 +7,5 @@
 
 
 html {
-    @apply font-times; /* Use your custom font class */
+    @apply font-calibri; /* Apply the Calibri font globally */
   }
