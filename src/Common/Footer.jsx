@@ -1,40 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
-import JSZip from 'jszip';
-import { kml as toGeoJSON } from 'togeojson';
 import 'leaflet/dist/leaflet.css';
 import Gislogo from '../Assets/logo/Gislogo.jpg';
 
-// Path to the KML file
-const kmzFilePath = '../Assets/project locations gis.kml'; // Ensure this is in your public folder
-
 function Footer() {
-  const [geoJsonData, setGeoJsonData] = useState(null);
-
-  useEffect(() => {
-    const fetchKmlFromKmz = async () => {
-      try {
-        const response = await fetch(kmzFilePath);
-        if (!response.ok) throw new Error('Network response was not ok');
-
-        const kmzBlob = await response.blob();
-        const zip = await JSZip.loadAsync(kmzBlob);
-        const kmlFileName = Object.keys(zip.files).find((fileName) => fileName.endsWith('.kml'));
-
-        if (kmlFileName) {
-          const kmlBlob = await zip.file(kmlFileName).async('text');
-          const kml = new window.DOMParser().parseFromString(kmlBlob, 'text/xml');
-          const geoJson = toGeoJSON(kml);
-          setGeoJsonData(geoJson);
-        }
-      } catch (error) {
-        console.error("Error fetching KMZ file:", error);
-      }
-    };
-
-    fetchKmlFromKmz();
-  }, []);
-
   return (
     <footer className="bg-gray-300 text-black py-8 px-4">
       <div className="container mx-auto flex flex-col lg:flex-row gap-8">
@@ -46,7 +14,7 @@ function Footer() {
           </p>
           <p className="text-sm mb-2">
             <strong>Address:</strong> D-40, Pocket D, Okhla Phase I, Okhla Industrial Area, New Delhi, Delhi 110020
-          </p>  
+          </p>
           <p className="text-sm mb-2">
             <strong>Email:</strong> info@esipl.net
           </p>
@@ -63,20 +31,20 @@ function Footer() {
           </p>
         </div>
 
-        {/* KMZ File Map Section */}
+        {/* Google Maps Iframe Section */}
         <div className="flex-1">
           <h2 className="text-2xl font-bold mb-4">Our Projects</h2>
           <p className="text-sm mb-4">
             Below are the project locations displayed on the map.
           </p>
-          {/* Map Container */}
-          <MapContainer center={[20.5937, 78.9629]} zoom={5} style={{ height: "400px", width: "100%" }}>
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
-            {geoJsonData && <GeoJSON data={geoJsonData} />}
-          </MapContainer>
+          {/* Embed Google Maps */}
+          <iframe 
+            src="https://www.google.com/maps/d/u/0/embed?mid=13MVp0yf69XHfw-Bf31x5N2G1pT9wik4&ehbc=2E312F" 
+            width="100%" 
+            height="400" 
+            style={{ border: 0 }} 
+            allowFullScreen 
+          ></iframe>
         </div>
       </div>
 
