@@ -3,9 +3,10 @@ import yourImage from '../../Assets/talktous/talk to us.jpg'; // Update with you
 
 const TalkToUs = () => {
     return (
-        <div className="relative flex flex-col lg:flex-row justify-between items-center h-[60vh] p-6 bg-gradient-to-r from-orange-600 to-orange-300 overflow-hidden">
+        <div className="relative flex flex-col lg:flex-row justify-between items-center h-screen lg:h-[60vh] p-0 bg-gradient-to-r from-orange-600 to-orange-300 overflow-hidden">
             {/* Decorative Shapes */}
             <div className="absolute inset-0 flex justify-center items-center">
+                {/* Decorative shapes code remains unchanged */}
                 <div className="absolute bg-white rounded-full w-40 h-40 opacity-25 transform" style={{ top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
                 <div className="absolute bg-white rounded-full w-32 h-32 opacity-20 transform" style={{ top: '45%', left: '50%', transform: 'translate(-30%, -30%)' }}></div>
                 <div className="absolute bg-white rounded-full w-48 h-48 opacity-15 transform" style={{ top: '50%', left: '50%', transform: 'translate(-40%, -40%)' }}></div>
@@ -17,7 +18,7 @@ const TalkToUs = () => {
             </div>
 
             {/* Left Side Content */}
-            <div className="flex flex-col items-start w-full max-w-md z-10">
+            <div className="flex flex-col items-start w-full max-w-md z-10 p-6">
                 <div className="border-t-4 border-l-4 border-orange-500 p-4 mb-4">
                     <h1 className="text-5xl font-bold text-white">
                         Talk to Us
@@ -39,12 +40,12 @@ const TalkToUs = () => {
             </div>
 
             {/* Right Side Image */}
-            <div className="flex-1 flex justify-end items-center mt-6 lg:mt-0">
+            <div className="flex-1 flex justify-end items-center mt-0 lg:mt-0"> {/* Set mt-0 to eliminate top margin */}
                 <img 
                     src={yourImage} 
                     alt="Talk to Us" 
-                    className="max-h-[60vh] w-auto object-cover rounded-lg shadow-lg" 
-                    style={{ objectFit: 'cover', marginLeft: 'auto' }} // Ensures the image is in the extreme right corner
+                    className="h-full max-h-[100vh] w-auto object-contain rounded-lg shadow-lg" // Ensured full height without cropping
+                    style={{ margin: 0 }} // Removes any additional margin
                 />
             </div>
         </div>

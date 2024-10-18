@@ -5,7 +5,7 @@ import image1 from '../../Assets/KeyPeople/PawanGoel.jpg';
 import image2 from '../../Assets/KeyPeople/AnilMaheshwary.jpg';
 import image3 from '../../Assets/KeyPeople/RajivGoel.jpg';
 import image4 from '../../Assets/KeyPeople/visson.jpeg';
-import image5 from '../../Assets/KeyPeople/whoweare.jpg'
+import image5 from '../../Assets/KeyPeople/whoweare.jpg';
 
 const slides = [
   {
@@ -13,14 +13,12 @@ const slides = [
     image: image5,
     content: 'Earthcon Systems India Private Limited is an ISO: 9001: 2015 certified organization having experience of more than 20 years. We are dedicated to driving innovation in the Geosynthetics field. With a passion for excellence and commitment to sustainability, we provide cutting-edge solutions that address the evolving needs of our clients.',
     bgColor: 'bg-gradient-to-r from-blue-400 to-purple-500',
-    
   },
   {
     heading: 'Vision & Mission',
     image: image4,
     content: 'Our mission is to lead the way in Retaining structures, Geohazard Mitigation, Geosynthetic Pavement Applications, etc. by delivering innovative, robust and sustainable solutions. Our commitment is to provide effective, reliable and environmentally conscious solutions that address complex geotechnical challenges and safeguard communities.',
     bgColor: 'bg-gradient-to-r from-green-400 to-teal-500',
-    
   },
   {
     heading: "From MD’s Desk",
@@ -75,16 +73,7 @@ const AboutUs = () => {
       </header>
 
       {/* Main Content */}
-      <div className="relative flex flex-1 mt-8 overflow-hidden">
-        {/* Content Section */}
-        <div className="flex flex-col justify-center p-8 w-full md:w-1/2 z-10 h-[400px]">
-          <h2 className="text-4xl font-extrabold text-white">{slides[currentIndex].heading}</h2>
-          <p className="mt-4 text-lg text-white">{slides[currentIndex].content}</p>
-          <h3 className="text-xl text-white mt-4">
-            {currentIndex < 3 ? slides[currentIndex].smallHeading : ""}
-          </h3>
-        </div>
-
+      <div className="relative flex flex-1 mt-8 overflow-hidden flex-col md:flex-row">
         {/* Image Section */}
         <div className="relative w-full md:w-1/2 flex items-center justify-center overflow-hidden">
           {currentIndex < 3 ? (
@@ -112,6 +101,15 @@ const AboutUs = () => {
               ))}
             </div>
           )}
+        </div>
+
+        {/* Content Section */}
+        <div className="flex flex-col justify-center p-8 w-full md:w-1/2 z-10 h-[400px]">
+          <h2 className="text-4xl font-extrabold text-white">{slides[currentIndex].heading}</h2>
+          <p className="mt-4 text-lg text-white">{slides[currentIndex].content}</p>
+          <h3 className="text-xl text-white mt-4">
+            {currentIndex < 3 ? slides[currentIndex].smallHeading : ""}
+          </h3>
         </div>
       </div>
 

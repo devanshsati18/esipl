@@ -57,17 +57,17 @@ export function CustomSlider() {
   `;
 
   return (
-    <div className="relative w-full h-screen overflow-hidden object-contain">
+    <div className="relative w-full h-screen overflow-hidden">
       <style>{slideInOut}</style>
       <Slider {...settings} className="w-full h-full">
         <div className="relative w-full h-full">
-          <img src={bg1} alt="image 1" className="w-full h-full object-cover" />
+          <img src={bg1} alt="image 1" className="w-full h-screen object-cover" />
         </div>
         <div className="relative w-full h-full">
-          <img src={bg2} alt="image 2" className="w-full h-full object-cover" />
+          <img src={bg2} alt="image 2" className="w-full h-screen object-cover" />
         </div>
         <div className="relative w-full h-full">
-          <img src={bg3} alt="image 3" className="w-full h-full object-cover" />
+          <img src={bg3} alt="image 3" className="w-full h-screen object-cover" />
         </div>
       </Slider>
       <div
@@ -76,7 +76,7 @@ export function CustomSlider() {
           top: '0',
           left: 0,
           width: '100%',
-          height: '40%', // Height of the overlay
+          height: '40%', // Adjust this height as necessary
           background: 'rgba(255, 165, 0, 0.75)',
           clipPath: 'polygon(0% 0%,60% 0%, 25% 70%, 0% 71%)',
           zIndex: 1,
@@ -87,7 +87,7 @@ export function CustomSlider() {
           padding: '1rem',
           boxSizing: 'border-box',
           overflow: 'hidden',
-          transform: 'translateY(33%)', // Pushes the overlay down by 33%
+          transform: 'translateY(33%)', // Adjust if necessary
         }}
       >
         <div className="text-left">
@@ -120,7 +120,6 @@ export function CustomSlider() {
         </div>
       </div>
 
-      {/* Optional: Bottom Dots for the Bottom Carousel */}
       <div style={{ position: 'absolute', bottom: '10px', left: '50%', transform: 'translateX(-50%)', zIndex: 2 }}>
         {slidesContent.map((_, index) => (
           <div
